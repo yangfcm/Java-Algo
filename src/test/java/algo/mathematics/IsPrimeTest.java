@@ -3,7 +3,9 @@ package algo.mathematics;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 
+@DisplayName("Test Math/IsPrime")
 public class IsPrimeTest {
 
   @ParameterizedTest(name = "Number {0} is tested as a prime number")

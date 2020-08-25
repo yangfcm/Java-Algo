@@ -10,26 +10,27 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Test String/Anagrams")
 public class AnagramsTest {
 
-  @ParameterizedTest(name="Solution one: string \"{0}\" and string \"{1}\" are anagrams")
+  @ParameterizedTest(name = "Solution one: string \"{0}\" and string \"{1}\" are anagrams")
   @MethodSource("anagramsSource")
-  void testAnagramsSolutionOne(String str1, String str2){
+  void testAnagramsSolutionOne(String str1, String str2) {
     assertTrue(Anagrams.runSolutionOne(str1, str2));
   }
 
-  @ParameterizedTest(name="Solution two: string \"{0}\" and string \"{1}\" are anagrams")
+  @ParameterizedTest(name = "Solution two: string \"{0}\" and string \"{1}\" are anagrams")
   @MethodSource("anagramsSource")
-  void testAnagramsSolutionTwo(String str1, String str2){
-    assertTrue(Anagrams.runSolutionTwo(str1, str2));}
+  void testAnagramsSolutionTwo(String str1, String str2) {
+    assertTrue(Anagrams.runSolutionTwo(str1, str2));
+  }
 
-  @ParameterizedTest(name="Solution one: string \"{0}\" and string \"{1}\" are NOT anagrams")
+  @ParameterizedTest(name = "Solution one: string \"{0}\" and string \"{1}\" are NOT anagrams")
   @MethodSource("nonAnagramsSource")
-  void testNonAnagramsSolutionOne(String str1, String str2){
+  void testNonAnagramsSolutionOne(String str1, String str2) {
     assertFalse(Anagrams.runSolutionOne(str1, str2));
   }
 
-  @ParameterizedTest(name="Solution two: string \"{0}\" and string \"{1}\" are NOT anagrams")
+  @ParameterizedTest(name = "Solution two: string \"{0}\" and string \"{1}\" are NOT anagrams")
   @MethodSource("nonAnagramsSource")
-  void testNonAnagramsSolutionTwo(String str1, String str2){
+  void testNonAnagramsSolutionTwo(String str1, String str2) {
     assertFalse(Anagrams.runSolutionTwo(str1, str2));
   }
 

@@ -52,4 +52,24 @@ public class SingletonTest {
     assertTrue(ins1 == ins2);
     assertEquals(ins1.hashCode(), ins2.hashCode());
   }
+
+  @DisplayName("Implementation 6: Two instances created on Singleton should be same ")
+  @Test()
+  public void TestSingleInstance6() {
+    SingleInstance6 ins1 = SingleInstance6.getInstance();
+    SingleInstance6 ins2 = SingleInstance6.getInstance();
+    assertTrue(ins1 == ins2);
+    assertEquals(ins1.hashCode(), ins2.hashCode());
+  }
+
+  @DisplayName("Implementation 7: Two instances created on Singleton should be same ")
+  @Test()
+  public void TestSingleInstance7() {
+    SingleInstance7 ins1 = SingleInstance7.INSTANCE;
+    SingleInstance7 ins2 = SingleInstance7.INSTANCE;
+    assertTrue(ins1 == ins2);
+    assertEquals(ins1.hashCode(), ins2.hashCode());
+    assertEquals(ins1.test(), "test");
+    assertEquals(ins2.test(), "test");
+  }
 }

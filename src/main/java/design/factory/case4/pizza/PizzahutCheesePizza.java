@@ -1,4 +1,4 @@
-package design.factory.case3.pizza;
+package design.factory.case4.pizza;
 
 public class PizzahutCheesePizza extends Pizza {
 

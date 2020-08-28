@@ -1,26 +1,22 @@
-package design.factory.case2.order;
+package design.factory.case4.order;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import design.factory.case2.create.SimpleFactory;
-import design.factory.case2.pizza.*;
+import design.factory.case4.create.AbsFactory;
+import design.factory.case4.pizza.*;
 
 public class OrderPizza {
-  SimpleFactory simpleFactory;
-  Pizza pizza = null;
+  AbsFactory factory;
 
-  public OrderPizza(SimpleFactory simpleFactory) {
-    setFactory(simpleFactory);
-  }
-
-  public void setFactory(SimpleFactory simpleFactory) {
-    String pizzaType = "";
-    this.simpleFactory = simpleFactory;
+  private void setFactory(AbsFactory factory) {
+    this.factory = factory;
+    Pizza pizza = null;
+    String pizzaType;
     do {
       pizzaType = readPizzaType();
-      pizza = this.simpleFactory.createPizza(pizzaType);
+      pizza = this.factory.createPizza(pizzaType);
       if (pizza == null) {
         System.out.println("Invalid input, try again.");
         continue;
@@ -30,6 +26,10 @@ public class OrderPizza {
       pizza.cut();
       pizza.pack();
     } while (true);
+  }
+
+  public OrderPizza(AbsFactory factory) {
+    this.setFactory(factory);
   }
 
   private String readPizzaType() {

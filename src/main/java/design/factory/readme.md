@@ -23,6 +23,12 @@
 
 - 案例 3：
   `factory/case3`
+
   - 需求：在订购披萨时还可以点不同披萨店制作的不同口味的披萨。例如 Domino 的 cheese pizza 或者 Pizzahut 的 Chicken pizza。如果仍然使用简单工厂模式，就需要对不同的披萨店创建不同的工厂类，但这样的实现扩展性，可维护性都不好。于是我们需要使用工厂方法模式。
   - 工厂方法模式介绍：定义一个创建对象的抽象方法，由子类决定要实例化的类。工厂方法模式将对象的实例化推迟到子类。
   - 实现：为不同披萨店的不同口味披萨创建一个类，例如：`DominoCheesePizza`, `DominoChickenPizza`,`PizzahutCheesePizza`, `PizzahutChickenPizza` 继承于 Pizza 类。在`OrderPizza`类中定义`createPizza()`抽象方法，由其子类`OrderPizzahutPizza`和`OrderDominoPizza`来实现该方法。如果用户想订哪家店的 pizza 就调用那家的 Order 类。
+
+- 案例 4：
+  `factory/case4`
+
+  - 抽象工厂模式介绍：定义一个 Interface 用于创建相关或有依赖关系的对象簇，而无需指明具体的类。是简单工厂模式和工厂方法模式的整合。在实现中，该模式将工厂抽象成两层：抽象工厂和具体实现工厂的子类。开发者可以根据创建对象类型使用对应的工厂子类。这样可以将单个的简单工厂变成工厂簇，更有利于代码的维护和扩展。(将案例 3 的需求用抽象工厂模式实现)

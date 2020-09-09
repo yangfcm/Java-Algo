@@ -164,3 +164,16 @@ Souce code for learning [尚硅谷 - Java 设计模式](https://www.youtube.com/
 不足之处在于，可能导致有过多的命令类，增加了系统的复杂度。
 
 空命令也是一种设计模式，它为我们省去了判空的操作。
+
+## 观察者模式
+
+`design/observer/old` 不使用观察者模式<br>
+`design/observer/new` 使用观察者模式改进以上代码
+
+观察者模式通常包含一个数据发布类 Subject 和观察者类 Observer
+
+Subject 类中需要实现
+
+- registerObserver 注册观察者
+- removeObserver 移除观察者
+- notifyObservers 通知所有注册的观察者。根据需求，它可以是更新数据，让用户来取，也可以是实时推送。

@@ -170,6 +170,8 @@ Souce code for learning [尚硅谷 - Java 设计模式](https://www.youtube.com/
 `design/observer/old` 不使用观察者模式<br>
 `design/observer/new` 使用观察者模式改进以上代码
 
+ngrx, observable
+
 观察者模式通常包含一个数据发布类 Subject 和观察者类 Observer
 
 Subject 类中需要实现
@@ -177,3 +179,16 @@ Subject 类中需要实现
 - registerObserver 注册观察者
 - removeObserver 移除观察者
 - notifyObservers 通知所有注册的观察者。根据需求，它可以是更新数据，让用户来取，也可以是实时推送。
+
+## 访问者模式
+
+`design/visitor`
+
+redux
+
+封装一些作用域某种数据结构的个元素的操作，在不改变数据结构的前提下定义作用于这些元素的新的操作。<br>
+它可以实现将数据结构和数据操作分离。
+
+实现方法是在被访问的类里面加一个对外提供接待访问者的接口。
+
+应用场景：需要对一个对象结构中的对象进行多种不同操作，同时又要避免让这些操作“污染”这些对象的类。

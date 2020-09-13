@@ -1,6 +1,4 @@
-package design.facade.devices;
-
-import design.facade.CinemaFacade;
+package design.facade;
 
 public class App {
   public static void main(String[] args) {

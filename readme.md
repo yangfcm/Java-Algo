@@ -9,10 +9,6 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 - All problems and solutions are in directory: `src/main/java/algo/*`
 - All test cases are in directory: `src/test/java/algo/*`
 
-`/mathematics`
-
-- **Is Prime** Test if a given number is a prime - `IsPrime.cs`
-
 ## Development Environment
 
 - Java 11

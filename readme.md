@@ -16,6 +16,7 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 1. **Chunk Array** Given an array and chunk size, divide the array into many subarrays where each subarray is of length size - `ArrayChunk.java`
 2. **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.java`
 3. **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.java`
+4. **Matrix** Product a spiral matrix
 
 ### Dynamic - `/dynamic`
 

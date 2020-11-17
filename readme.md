@@ -17,6 +17,8 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 2. **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.java`
 3. **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.java`
 4. **Matrix** Product a spiral matrix
+5. **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.java`
+6. **Moving Zeroes** Move zeroes to the end of an array - `MovingZeroes.java`
 
 ### Dynamic - `/dynamic`
 

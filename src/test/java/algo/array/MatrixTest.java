@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Test array/Matrix")
-public class MatrixText {
+public class MatrixTest {
   @DisplayName("Test matrix of size 2")
   @Test
   public void TestSize2() {

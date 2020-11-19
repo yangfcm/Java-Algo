@@ -19,6 +19,10 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 4. **Matrix** Product a spiral matrix
 5. **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.java`
 6. **Moving Zeroes** Move zeroes to the end of an array - `MovingZeroes.java`
+7. **Plus One** Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.java`
+8. **Remove Duplicates** Remove duplicated numbers from an array - `RemoveDuplicates.java`
+9. **Rotate Array** Rotate an array to the right by k steps in place - `RotateArray.java`
+10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.java`
 
 ### Dynamic - `/dynamic`
 

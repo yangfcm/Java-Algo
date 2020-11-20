@@ -23,6 +23,9 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 8. **Remove Duplicates** Remove duplicated numbers from an array - `RemoveDuplicates.java`
 9. **Rotate Array** Rotate an array to the right by k steps in place - `RotateArray.java`
 10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.java`
+11. **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.java`
+12. **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.java`
+13. **Sales by Match** - Determine pairs of socks - `SockMerchant.java`
 
 ### Dynamic - `/dynamic`
 

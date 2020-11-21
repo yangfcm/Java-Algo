@@ -29,6 +29,10 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Dynamic - `/dynamic`
 
+1. **Max Profit** Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.javacs`
+2. **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `DrawPyramid.java`
+3. **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `DrawSteps.java`
+
 ### Maths - `/mathematics`
 
 1. **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.java`

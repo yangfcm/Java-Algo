@@ -47,6 +47,12 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Searching - `/searching`
 
+1. Implement linear search - `LinearSearch.java`
+2. Implement binary search - `BinarySearch.java`
+3. Implmenet jump search - `JumpSearch.java`
+4. Implement interpolation search - `InterpolationSearch.java`
+5. Implement exponential search - `ExponentialSearch.java`
+
 ## Development Environment
 
 - Java 11

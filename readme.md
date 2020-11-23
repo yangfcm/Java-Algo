@@ -43,6 +43,10 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Sorting - `/sorting`
 
+1. Implement bubble sorting - `BubbleSorting.java`
+2. Implement merge sorting - `MergeSorting.java`
+3. Implmenet selection sorting - `SelectionSorting.java`
+
 ### Data structure - `/ds`
 
 ### Searching - `/searching`

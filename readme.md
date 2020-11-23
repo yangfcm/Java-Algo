@@ -41,6 +41,22 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### String - `/string`
 
+1. **Anagrams** Check to see if two strings are anagrams of each other - `Anagrams.java`
+2. **Capitalize** Capitalize each word in a string - `Capitalize.java`
+3. **Is Balanced** Test if curly braces in a string is matched - `IsBalanced.java`
+4. **Max Character** Get the character that most commonly appears in a given string - `MaxChar.java`
+5. **Palindrome** Check if a string is palindrome - `Palindrome.java`
+6. **Check Palindrome Permutation** Check if a string is a permutation of a palindrome - `PalindromePermutation.java`
+7. **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.java`
+8. **Reverse Integer** Reverse an integer - `ReverseInteger.java`
+9. **Reverse String** Reverse a string - `ReverseString.java`
+10. **How Many Vowels** Count the number of vowels used in a string - `VowelsCount.java`
+11. **Check Permutation** Check two strings are permutation - `CheckPermutation.java`
+12. **Check Unique Characters** Determine if a string has all unique characters - `IsUnique.java`
+13. **Check One Away** Check if one string is one edit away from the other string - `OneAway.java`
+14. **Check String Rotation** Check if one string is the rotation of the other string, using isSubString function - `StringRotation.java`
+15. **Compress String** Compress a string - `StringCompression.java`
+
 ### Sorting - `/sorting`
 
 1. Implement bubble sorting - `BubbleSorting.java`

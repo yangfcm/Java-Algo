@@ -81,4 +81,4 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ## How to run
 
-Under project root directory: `gradle test`.
+Under project root directory: `./gradlew test`.

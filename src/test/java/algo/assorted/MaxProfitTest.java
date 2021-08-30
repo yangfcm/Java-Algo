@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Test Dynamic/MaxProfit")
+@DisplayName("Test Assorted/MaxProfit")
 public class MaxProfitTest {
   @Test
   @DisplayName("should calculate correct max profit")

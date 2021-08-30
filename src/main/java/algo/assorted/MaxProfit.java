@@ -1,4 +1,4 @@
-package algo.dynamic;
+package algo.assorted;
 
 public class MaxProfit {
   public static int solution(int[] prices) {

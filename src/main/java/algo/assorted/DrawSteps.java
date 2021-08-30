@@ -1,4 +1,4 @@
-package algo.dynamic;
+package algo.assorted;
 
 /**
  * Accept a positive number n The function should console write a step shape

@@ -13,41 +13,110 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Array - `/array`
 
-1. **Chunk Array** Given an array and chunk size, divide the array into many subarrays where each subarray is of length size - `ArrayChunk.java`
-2. **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.java`
-3. **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.java`
-4. **Matrix** Product a spiral matrix
-5. **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.java`
-6. **Moving Zeroes** Move zeroes to the end of an array - `MovingZeroes.java`
-7. **Plus One** Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.java`
-8. **Remove Duplicates** Remove duplicated numbers from an array - `RemoveDuplicates.java`
-9. **Rotate Array** Rotate an array to the right by k steps in place - `RotateArray.java`
-10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.java`
-11. **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.java`
-12. **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.java`
-13. **Sales by Match** - Determine pairs of socks - `SockMerchant.java`
+1. `ArrayChunk.java`
+
+   Chunk Array: Given an array and chunk size, divide the array into many subarrays where each subarray is of length size.
+
+2. `Intersect.java`
+
+   Compute two arrays' intersection.
+
+3. `IsSorted.java`
+
+   Test if a given array of numbers is sorted.
+
+4. `Matrix.java`
+
+   Produce a spiral matrix.
+
+5. `Missing.java`
+
+   Missing Number: Take an unsorted array of unique numbers from to n and return the missing number in the sequence.
+
+6. `MovingZeroes.java`
+
+   Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+7. `PlusOne.java`
+
+   Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
+
+8. `RemoveDuplicates.java`
+
+   Given an array with sorted numbers, remove duplicated numbers in-place.
+
+9. `RotateArray.java`
+
+   Given an array, rotate the array to the right by k steps in-place.
+
+10. `RotateImage.java`
+
+    Rotate an image represented by a n\*n array by 90 degrees (clockwise).
+
+11. `SockMerchant.java`
+
+    Find out how many pairs of socks with matching colors(represented by numbers in an array).
+
+12. `SparseArray.java`
+
+    Compress and decompress a sparse array.
+
+13. `TwoSum.java`
+
+    Return indices of the two numbers whose sum equals to a target.
+
+14. `ValidSudoku.java`
+
+    Determine if a 9x9 Sudoku board is valid.
+
+### Assorted - `/assorted`
+
+1. `DrawPyramid.java`
+
+   Pyramid: Print a pyramid shape with n levels using # character and space on its left and right side.
+
+2. `DrawSteps.java`
+
+   Steps: Print a step shape with n levels using # character and space(s) on the right.
+
+3. `MaxProfit.java`
+
+   Max profit: Given an array with each number representing a stock price for one day, work out an algorithm to find the max profit.
 
 ### Dynamic - `/dynamic`
 
-1. **Max Profit** Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.javacs`
-2. **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `DrawPyramid.java`
-3. **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `DrawSteps.java`
+**_TODO_**
+
+### Data structure - `/ds`
+
+**_TODO_**
 
 ### Maths - `/mathematics`
 
-1. **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.java`
-2. **Fizzbuzz** Print the numbers from 1 to N. But for multiples of 3 print 'fizz' instead of the number; for multiples of 5, print 'buzz'; for numbers which are multiples of both 3 and 5, print 'fizzbuzz' - `Fizzbuzz.java`
-3. **Is Prime** Test if a given number is a prime - `IsPrime.java`
+1. `Fibonacci.java`
+
+   Print the n-th number in the fibonacci series
+
+2. `Fizzbuzz.java`
+
+   Fizzbuzz: print the numbers from 1 to N.<br>
+   But for multiples of 3 print 'fizz' instead of the number;<br>
+   for multiples of 5, print 'buzz';<br>
+   for numbers which are multiples of both 3 and 5, print 'fizzbuzz'<br>
+
+3. `IsPrime.java`
+
+   Test if a given number is a prime
 
 ### String - `/string`
 
 1. `Anagrams.java`
 
-   Check to see if two strings are anagrams of each other
+   Anagrams: Check to see if two strings are anagrams of each other
 
 2. `Capitalize.java`
 
-   Capitalize each word in a string
+   Capitalize: Capitalize each word in a string
 
 3. `CheckPermutation.java`
 
@@ -57,7 +126,7 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
    Count the number of vowels used in a string
 
-5. `IsBalanced.java`
+5. `Isbalanced.java`
 
    Test if curly braces in a string is matched
 
@@ -65,11 +134,11 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
    Determine if a string has all unique characters
 
-7. `MakeAnagrams.js`
+7. `MakeAnagrams.java`
 
    Determine the minimum number of characters deletions required to make two strings anagrams.
 
-8. `MaxChar.java`
+8. `Maxchar.java`
 
    Get the character that most commonly appears in a given string
 
@@ -79,7 +148,7 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 10. `Palindrome.java`
 
-    Check if a string is palindrome
+    Test a string is a palindrome(its reversed string is exactly the same as itself)
 
 11. `PalindromePermutation.java`
 
@@ -107,19 +176,39 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Sorting - `/sorting`
 
-1. Implement bubble sorting - `BubbleSorting.java`
-2. Implement merge sorting - `MergeSorting.java`
-3. Implmenet selection sorting - `SelectionSorting.java`
+1. `BubbleSorting.java`
 
-### Data structure - `/ds`
+   Implement bubble sorting
+
+2. `MergeSorting.java`
+
+   Implement merge sorting
+
+3. `SelectionSorting.java`
+
+   Implmenet selection sorting
 
 ### Searching - `/searching`
 
-1. Implement linear search - `LinearSearch.java`
-2. Implement binary search - `BinarySearch.java`
-3. Implmenet jump search - `JumpSearch.java`
-4. Implement interpolation search - `InterpolationSearch.java`
-5. Implement exponential search - `ExponentialSearch.java`
+1. `LinearSearch.js`
+
+   Implement linear search
+
+2. `BinarySearch.js`
+
+   Implement binary search
+
+3. `JumpSearch.js`
+
+   Implmenet jump search
+
+4. `InterpolationSearch.js`
+
+   Implement interpolation search
+
+5. `ExponentialSearch.js`
+
+   Implement exponential search
 
 ## Development Environment
 

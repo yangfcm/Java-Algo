@@ -1,4 +1,4 @@
-package algo.dynamic;
+package algo.assorted;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

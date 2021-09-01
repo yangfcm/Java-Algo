@@ -12,21 +12,21 @@ import org.junit.jupiter.params.provider.MethodSource;
 @DisplayName("Test Dynamic/CanConstruct")
 public class CanConstructTest {
   
-  @ParameterizedTest(name = "solution one: if {0} can be constructed with the strings from {1}: {2}")
+  @ParameterizedTest(name = "solution one: if \"{0}\" can be constructed with the strings from {1}: {2}")
   @MethodSource("canConstructSource")
   void testSolutionOne(String target, String[] strs, boolean expected) {
     boolean actual = CanConstruct.solution1(target, strs);
     assertEquals(expected, actual);
   }
 
-  @ParameterizedTest(name = "solution two: if {0} can be constructed with the strings from {1}: {2}")
+  @ParameterizedTest(name = "solution two: if \"{0}\" can be constructed with the strings from {1}: {2}")
   @MethodSource({"canConstructSource", "canConstructSourceWithBig"})
   void testSolutionTwo(String target, String[] strs, boolean expected) {
     boolean actual = CanConstruct.solution2(target, strs);
     assertEquals(expected, actual);
   }
 
-  @ParameterizedTest(name = "solution two: if {0} can be constructed with the strings from {1}: {2}")
+  @ParameterizedTest(name = "solution three: if \"{0}\" can be constructed with the strings from {1}: {2}")
   @MethodSource({"canConstructSource", "canConstructSourceWithBig"})
   void testSolutionThree(String target, String[] strs, boolean expected) {
     boolean actual = CanConstruct.solution3(target, strs);

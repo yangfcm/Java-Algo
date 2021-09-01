@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 @DisplayName("Test Dynamic/BestSum")
 public class BestSumTest {
   
-  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target{0} is {2}")
+  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target {0} is {2}")
   @MethodSource("bestSumSource")
   void testSolutionOne(int target, int[] numbers, int[] expected) {
     var actual = BestSum.solution1(target, numbers);
@@ -27,7 +27,7 @@ public class BestSumTest {
     }
   }
 
-  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target{0} is {2}")
+  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target {0} is {2}")
   @MethodSource({"bestSumSource", "bestSumSourceWithBigNumber"})
   void testSolutionTwo(int target, int[] numbers, int[] expected) {
     var actual = BestSum.solution2(target, numbers);
@@ -40,7 +40,7 @@ public class BestSumTest {
     }
   }
 
-  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target{0} is {2}")
+  @ParameterizedTest(name = "solution one: the best sum for {1} to reach target {0} is {2}")
   @MethodSource({"bestSumSource", "bestSumSourceWithBigNumber"})
   void testSolutionThree(int target, int[] numbers, int[] expected) {
     var actual = BestSum.solution3(target, numbers);

@@ -2,7 +2,6 @@ package algo.dynamic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -91,7 +90,7 @@ public class AllConstruct {
    * @implNote Use recursive + tabulation
    */
   static public ArrayList<ArrayList<String>> solution3(String target, String[] strs) {
-    var table =  (ArrayList<ArrayList<String>>[]) new ArrayList[target.length()+1];
+    var table = (ArrayList<ArrayList<String>>[]) new ArrayList[target.length()+1];
     for(int i = 0; i <= target.length(); i++) {
       table[i] = new ArrayList<ArrayList<String>>();
     }

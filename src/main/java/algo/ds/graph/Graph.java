@@ -28,6 +28,41 @@ public class Graph {
     this.undirected = undirected;
   }
 
+  /**
+   * Add an edge between two vertexes
+   * @param startIndex The index of the starting vertex in vertex list.
+   * @param endIndex The index of the end vertex in vertex list.
+   * @param weight The weight of the edge.
+   */
+  public void insertEdge(int startIndex, int endIndex, int weight) {
+    if(weight <= 0) throw new Error("Weight must be a number bigger than 0");
+    if(matrix[startIndex][endIndex] == 0) {
+      matrix[startIndex][endIndex] = weight;
+      if(undirected == true) {
+        matrix[endIndex][startIndex] = weight;
+      }
+    }
+    numberOfEdges++;
+  }
+
+  public void insertEdge(int startIndex, int endIndex) {
+    insertEdge(startIndex, endIndex, 1);
+  }
+
+  /**
+   * Remove an edge between two vertexes
+   * @return
+   */
+  public void removeEdge(int startIndex, int endIndex) {
+    if(matrix[startIndex][endIndex] != 0) {
+      matrix[startIndex][endIndex] = 0;
+      if(undirected == true) {
+        matrix[endIndex][startIndex] = 0;
+      }
+    }
+    numberOfEdges--;
+  }
+
   public boolean getUndirected() {
     return undirected;
   }

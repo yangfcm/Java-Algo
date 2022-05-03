@@ -102,6 +102,24 @@ public class GraphTest {
     dGraph.removeEdge(1, 3);
     assertEquals(dGraph.getNumberOfEdges(), 5);
     assertEquals(dGraph.getMatrix()[1][3], 0);
+  }
 
+  @DisplayName("Test DFS searching")
+  @Test
+  public void testDFSSearching() {
+    var uGraphSearch = uGraph.searchDFS();
+    assertArrayEquals(uGraphSearch, new int[] {1,2,4,3,5});
+
+    var dGraphSearch = dGraph.searchDFS();
+    assertArrayEquals(dGraphSearch, new int[] {1,2,4,5,3});
+  }
+
+  @DisplayName("Test BFS searching")
+  @Test
+  public void textBFSSearching() {
+    var uGraphSearch = uGraph.searchBFS();
+    assertArrayEquals(uGraphSearch, new int[] {1,2,5,4,3});
+    var dGraphSearch = dGraph.searchBFS();
+    assertArrayEquals(dGraphSearch, new int[] {1,2,5,4,3});
   }
 }

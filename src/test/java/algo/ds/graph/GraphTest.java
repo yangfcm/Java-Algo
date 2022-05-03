@@ -37,10 +37,11 @@ public class GraphTest {
 
   @DisplayName("Test graph can be initialized correctly.")
   @Test
-  public void test() {
+  public void testInitialization() {
     assertArrayEquals(new int[]{1,2,3,4,5}, uGraph.getVertexList());
     assertEquals(uGraph.getUndirected(), true);
     assertEquals(uGraph.getNumberOfEdges(), 5);
+    assertEquals(uGraph.getNumberOfVertexes(), 5);
     assertArrayEquals(uGraph.getIsVisited(), new boolean[5]);
     int[][] expectedUGraph = {
       {0,1,0,0,1},
@@ -55,6 +56,7 @@ public class GraphTest {
     assertArrayEquals(new int[]{1,2,3,4,5}, dGraph.getVertexList());
     assertEquals(dGraph.getUndirected(), false);
     assertEquals(dGraph.getNumberOfEdges(), 6);
+    assertEquals(dGraph.getNumberOfVertexes(), 5);
     assertArrayEquals(dGraph.getIsVisited(), new boolean[5]);
     int[][] expectedDGraph = {
       {0,1,0,0,1},
@@ -65,5 +67,41 @@ public class GraphTest {
     };
     assertArrayEquals(dGraph.getMatrix(), expectedDGraph);
     assertArrayEquals(dGraph.getGraphArr().toArray(), new Integer[0]);
+  }
+
+  @DisplayName("Test insertEdge method")
+  @Test
+  public void testInsertEdge() {
+    uGraph.insertEdge(1, 2);
+    assertEquals(uGraph.getNumberOfEdges(), 6);
+    assertEquals(uGraph.getMatrix()[1][2], 1);
+    assertEquals(uGraph.getMatrix()[2][1], 1);
+    uGraph.insertEdge(1, 4, 9); // Test inserting an edge with weight.
+    assertEquals(uGraph.getNumberOfEdges(), 7);
+    assertEquals(uGraph.getMatrix()[1][4], 9);
+    assertEquals(uGraph.getMatrix()[4][1], 9);
+
+    dGraph.insertEdge(0, 3);
+    assertEquals(dGraph.getNumberOfEdges(), 7);
+    assertEquals(dGraph.getMatrix()[0][3], 1);
+    assertEquals(dGraph.getMatrix()[3][0], 0);
+
+    dGraph.insertEdge(1, 4, 9);
+    assertEquals(dGraph.getMatrix()[1][4], 9);
+    assertEquals(dGraph.getMatrix()[4][1], 0);
+  }
+
+  @DisplayName("Test removeEdge method")
+  @Test
+  public void testRemoveEdge() {
+    uGraph.removeEdge(1, 3);
+    assertEquals(uGraph.getNumberOfEdges(), 4);
+    assertEquals(uGraph.getMatrix()[1][3], 0);
+    assertEquals(uGraph.getMatrix()[3][1], 0);
+
+    dGraph.removeEdge(1, 3);
+    assertEquals(dGraph.getNumberOfEdges(), 5);
+    assertEquals(dGraph.getMatrix()[1][3], 0);
+
   }
 }

@@ -51,7 +51,8 @@ public class Graph {
 
   /**
    * Remove an edge between two vertexes
-   * @return
+   * @param startIndex The index of the starting vertex of the edge to remove.
+   * @param endIndex The index of the end vertex of the edge to remove
    */
   public void removeEdge(int startIndex, int endIndex) {
     if(matrix[startIndex][endIndex] != 0) {
@@ -69,6 +70,10 @@ public class Graph {
 
   public int[] getVertexList() {
     return vertexList;
+  }
+  
+  public int getNumberOfVertexes() {
+    return vertexList.length;
   }
 
   public int getNumberOfEdges() {

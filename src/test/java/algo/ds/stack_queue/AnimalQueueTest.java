@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Test ds/graph/stack_queue")
+@DisplayName("Test ds/stack_queue/AnimalQueue")
 public class AnimalQueueTest {
   private AnimalQueue animalQueue;
 

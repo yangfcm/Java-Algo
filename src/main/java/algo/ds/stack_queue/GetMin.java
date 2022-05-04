@@ -23,7 +23,7 @@ public class GetMin {
       }
       tempStack.push(stack.pop());
     }
-    while(tempStack.size() > 0) { // Restore the origina stack.
+    while(tempStack.size() > 0) { // Restore the original stack.
       stack.push(tempStack.pop());
     }
     return min;

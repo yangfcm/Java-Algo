@@ -33,20 +33,71 @@ public class HashTable<K, V> {
   public int getSize() {
     return size;
   }
+  public List<HashNode<K, V>> getTable() {
+    return table;
+  }
+  public HashNode<K, V> getHashNode(int index) {
+    return table.get(index);
+  }
 
   private final int hash(K key) { // Get the index for the key.
     return Math.abs(Objects.hashCode(key)) % size;
   }
 
   public void add(K key, V value) { // Add a key value pair.
+    int index = hash(key);
+    HashNode<K, V> head = table.get(index);
 
+    // Check if the key already exists.
+    while(head != null) {
+      if(head.key.equals(key)) {
+        head.value = value;
+        return;
+      }
+      head = head.next;
+    }
+
+    // Insert a key-value pair.
+    count++;
+    head = table.get(index);
+    HashNode<K, V> newNode = new HashNode<K, V>(key, value);
+    newNode.next = head;
+    table.set(index, newNode);
   }
 
   public V get(K key) { // Return a value for a key
+    int index = hash(key);
+    HashNode<K, V> head = table.get(index);
 
+    while(head != null) {
+      if(head.key.equals(key)) {
+        return head.value;
+      }
+      head = head.next;
+    }
+    return null;
   }
 
-  public void remove(K key) { // Remove a given key.
+  public V remove(K key) { // Remove a given key.
+    int index = hash(key);
+    HashNode<K, V> head = table.get(index);
+    HashNode<K, V> prev = null;
+    while(head != null) {
+      if(head.key.equals(key)) {  // If key is found.
+        break;
+      }
+      // Otherwise, keep looking.
+      prev = head;
+      head = head.next;
+    }
 
+    if(head == null) return null;
+    count--;
+    if(prev != null) {
+      prev.next = head.next;
+    } else {
+      table.set(index, head.next);
+    }
+    return head.value;
   }
 }

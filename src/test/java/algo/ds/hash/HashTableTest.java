@@ -62,4 +62,22 @@ public class HashTableTest {
     assertEquals(removed, "v2");
     assertEquals(table.get("k2"), null);
   }
+
+  @DisplayName("Should be able to resize")
+  @Test
+  public void testResize() {
+    setKeyValuePairs();
+    assertEquals(table.getSize(), 8);
+    table.resize(10);
+    assertEquals(table.getSize(), 10);  // Test increase table size.
+    assertEquals(table.get("k1"), "v1");
+    assertEquals(table.get("k2"), "v2");
+    assertEquals(table.get("k3"), "v3");  // Make sure existing key-value pairs not getting lost.
+    
+    table.resize(2);  // Test shrink table size.
+    assertEquals(table.get("k1"), "v1");
+    assertEquals(table.get("k2"), "v2");
+    assertEquals(table.get("k3"), "v3");
+
+  }
 }

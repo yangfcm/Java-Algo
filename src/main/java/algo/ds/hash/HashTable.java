@@ -63,6 +63,11 @@ public class HashTable<K, V> {
     HashNode<K, V> newNode = new HashNode<K, V>(key, value);
     newNode.next = head;
     table.set(index, newNode);
+    
+    // Check if the hash table size should be increased.
+    if((count* 1.0)/size >= 0.75) {
+      resize(size*2);
+    }
   }
 
   public V get(K key) { // Return a value for a key
@@ -98,6 +103,28 @@ public class HashTable<K, V> {
     } else {
       table.set(index, head.next);
     }
+
+    // Check if the hash table size should be decreased.
+    if((count* 1.0)/size >= 0.75) {
+      resize(size*2);
+    }
     return head.value;
+  }
+
+  public void resize(int size) {
+    var oldTable = table;
+    this.size = size;
+    count = 0;
+    table = new ArrayList<HashNode<K, V>>();
+    for(int i = 0; i < this.size; i++) {
+      table.add(null);
+    }
+    for(int k = 0; k < oldTable.size(); k++) {
+      HashNode<K, V> head = oldTable.get(k);
+      while(head != null) {
+        this.add(head.key, head.value);
+        head = head.next;
+      }
+    }
   }
 }

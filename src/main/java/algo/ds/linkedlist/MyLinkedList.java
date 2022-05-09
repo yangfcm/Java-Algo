@@ -1,4 +1,4 @@
-package algo.ds.linked_list;
+package algo.ds.linkedlist;
 
 /**
  * @name MyLinkedList
@@ -10,6 +10,10 @@ package algo.ds.linked_list;
 public class MyLinkedList<T> {
   private Node<T> head;
   private int count;
+
+  public Node<T> getHead() {
+    return head;
+  }
 
   public MyLinkedList() {
     head = null;
@@ -47,7 +51,7 @@ public class MyLinkedList<T> {
       addFirst(data);
       return;
     }
-    var prevNode = find(index-1);
+    var prevNode = findAt(index-1);
     if(prevNode != null) {
       var newNode = new Node<T>(data);
       newNode.next = prevNode.next;
@@ -68,7 +72,7 @@ public class MyLinkedList<T> {
     return node;
   }
 
-  public Node<T> find(int index) {
+  public Node<T> findAt(int index) {
     int currentIndex = 0;
     var node = head;
     while(node != null) {

@@ -2,7 +2,6 @@ package algo.ds.linkedlist;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

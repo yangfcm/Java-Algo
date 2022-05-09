@@ -85,4 +85,33 @@ public class MyLinkedList<T> {
     return null;
   }
 
+  public void removeFirst() {
+    if(head == null) return;  // If empty, return directly because there's nothing to remove.
+    head = head.next;
+  }
+
+  public void removeLast() {
+    if(head == null) return; 
+    var node = head;
+    if(node.next == null) { // Single node linked-list. 
+      head = null;
+      return;
+    }
+    while(node.next.next != null) {
+      node = node.next;
+    }
+    node.next = null;
+  }
+
+  public void removeAt(int index) {
+    if(head == null) return; 
+    if(index == 0) {
+      removeFirst();
+    }
+
+    var node = findAt(index);
+    if(node == null) return;  // If the index is out of the boundary.
+    var prevNode = findAt(index - 1);
+    prevNode.next = node.next;
+  }
 }

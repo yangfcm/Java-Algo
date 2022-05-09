@@ -78,4 +78,30 @@ public class MyLinkedListTest {
     assertEquals(6, list.getCount());
     assertEquals("middle", list.findAt(3).getData());
   }
+
+  @DisplayName("Should be able to remove the first and last nodes from linked list")
+  @Test
+  public void testRemoveFirstAndLast() {
+    populateList();
+    assertEquals(4, list.getCount());
+
+    list.removeFirst();
+    assertEquals(3, list.getCount());
+    assertEquals("b", list.findFirst().getData());  // After the first node is removed, its originally second node becomes the first.
+
+    list.removeLast();
+    assertEquals(2, list.getCount());
+    assertEquals("c", list.findLast().getData()); // After the last node is removed, its originally second last node becomes the last.
+  }
+
+  @DisplayName("Should be able to remove nodes at a particular position from linked list")
+  @Test
+  public void testRemoveAt() {
+    populateList();
+    assertEquals(4, list.getCount());
+
+    list.removeAt(2);
+    assertEquals(3, list.getCount());
+    assertEquals("d", list.findAt(2).getData());
+  }
 }

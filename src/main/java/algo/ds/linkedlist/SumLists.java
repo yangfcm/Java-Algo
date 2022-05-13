@@ -10,6 +10,7 @@ package algo.ds.linkedlist;
  *
  * Then suppose the digits are stored in forward order. Repeat the above problem
  * e.g. (6 -> 1 -> 7) + (2 -> 9 -> 5) => 617+295 = 912 => 9 -> 1 -> 2
+ * To implement it, either use linked list with double direction or reverse list and use the same implementation as below.
  * Do not convert to number.
  * @note Consider two lists are in different length.
  */

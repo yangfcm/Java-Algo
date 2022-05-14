@@ -22,7 +22,12 @@ public class TreeNode<T> {
   }
 
   public void remove(T data) {
-    this.children.remove(data);
+    for(int i = 0; i < this.children.size(); i++) {
+      if(this.children.get(i).getData().equals(data)) {
+        this.children.remove(i);
+        return;
+      }
+    }
   }
 
   public T getData() {

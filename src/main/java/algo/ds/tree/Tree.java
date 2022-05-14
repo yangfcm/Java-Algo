@@ -36,4 +36,11 @@ public class Tree<T> {
 
     return traverseList;
   }
+
+  public TreeNode<T> getRoot() {
+    return root;
+  }
+  public void setRoot(TreeNode<T> root) {
+    this.root = root;
+  }
 }

@@ -4,43 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @name Tree
- * @description Implement tree data structure and its traverse method(BFS, DFS)
+ * @name Node
+ * @description Node class for tree
  */
 public class Tree<T> {
-  private TreeNode<T> root;
-  private List<TreeNode<T>> traverseList;  // A list to store the traverse result of a tree.
+  private T data;
+  private List<Tree<T>> children;
 
-  public Tree() {
-    root = null;
-    traverseList = new ArrayList<TreeNode<T>>();
+  public Tree(T data) {
+    this.data = data;
+    this.children = new ArrayList<Tree<T>>();
   }
 
-  public List<TreeNode<T>> traverseBfs() {
-    traverseList = new ArrayList<TreeNode<T>>();
-    var tempList = new ArrayList<TreeNode<T>>();
-    tempList.add(root);
-    while(tempList.size() > 0) {
-      TreeNode<T> firstNode = tempList.get(0); // Save the current node.
-      tempList.remove(0);
+  public void add(T data) {
+    var newNode = new Tree<T>(data);
+    this.children.add(newNode);
+  }
 
-      for (TreeNode<T> node : firstNode.getChildren()) {
-        traverseList.add(node);
+  public void remove(T data) {
+    for(int i = 0; i < this.children.size(); i++) {
+      if(this.children.get(i).getData().equals(data)) {
+        this.children.remove(i);
+        return;
       }
     }
-    return traverseList;
   }
 
-  public List<TreeNode<T>> traverseDfs() {
-    // @TODO: implement DFS search.
-
-    return traverseList;
+  public T getData() {
+    return data;
   }
 
-  public TreeNode<T> getRoot() {
-    return root;
-  }
-  public void setRoot(TreeNode<T> root) {
-    this.root = root;
+  public List<Tree<T>> getChildren() {
+    return children;
   }
 }

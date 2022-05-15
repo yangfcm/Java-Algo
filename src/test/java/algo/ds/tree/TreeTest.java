@@ -9,33 +9,42 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Test ds/tree")
 public class TreeTest {
-  TreeNode<Character> node;
-  Tree<Character> tree;
+  Tree<Character> node;
 
   @BeforeEach
   public void setUp() {
-    node = new TreeNode<Character>('a');
-    tree = new Tree<Character>();
-    tree.setRoot(new TreeNode<Character>('a'));
-    tree.getRoot().add('b');
-    tree.getRoot().add('c');
-    tree.getRoot().add('d');
-    tree.getRoot().getChildren().get(0).add('e');
-    tree.getRoot().getChildren().get(0).add('f');
-    tree.getRoot().getChildren().get(2).add('g');
+    node = new Tree<Character>('a');
   }
 
   @AfterEach
   public void clean() {
     node = null;
-    tree = null;
   }
   
   @DisplayName("Test node initialization.")
   @Test
   public void testInitialNode() {
     assertEquals('a', node.getData());
-    assertEquals(0, node.getChildren().size());
+    assertEquals(0, node.getChildren().size()); // The node doesn't have children.
   }
 
+  @DisplayName("Should be able to add node")
+  @Test
+  public void testAddingNode() {
+    node.add('b');
+    assertEquals(1, node.getChildren().size());
+    assertEquals('b', node.getChildren().get(0).getData());
+  }
+
+  @DisplayName("Should be able to remove node")
+  @Test
+  public void testRemovingNode() {
+    node.add('b');
+    node.add('c');
+    node.add('d');
+    node.remove('c');
+    assertEquals(2, node.getChildren().size());
+    assertEquals('b', node.getChildren().get(0).getData());
+    assertEquals('d', node.getChildren().get(1).getData());
+  }
 }

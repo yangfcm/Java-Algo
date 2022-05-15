@@ -9,33 +9,35 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Test ds/tree/traverse")
 public class TraverseTest {
-  Tree<Character> node;
-  // Tree<Character> tree;
+  Tree<Object> tree;
 
-  // @BeforeEach
-  // public void setUp() {
-  //   node = new TreeNode<Character>('a');
-  //   tree = new Tree<Character>();
-  //   tree.setRoot(new TreeNode<Character>('a'));
-  //   tree.getRoot().add('b');
-  //   tree.getRoot().add('c');
-  //   tree.getRoot().add('d');
-  //   tree.getRoot().getChildren().get(0).add('e');
-  //   tree.getRoot().getChildren().get(0).add('f');
-  //   tree.getRoot().getChildren().get(2).add('g');
-  // }
+  @BeforeEach
+  public void setUp() {
+    tree = new Tree<Object>('a');
+    tree.add('b');
+    tree.add('c');
+    tree.add('d');
+    tree.getChildren().get(0).add('e');
+    tree.getChildren().get(0).add('f');
+    tree.getChildren().get(2).add('g');
+  }
 
-  // @AfterEach
-  // public void clean() {
-  //   node = null;
-  //   tree = null;
-  // }
+  @AfterEach
+  public void clean() {
+    tree = null;
+  }
   
-  @DisplayName("Test node initialization.")
+  @DisplayName("Should be able to do BFS traverse")
   @Test
-  public void testInitialNode() {
-    // assertEquals('a', node.getData());
-    // assertEquals(0, node.getChildren().size());
+  public void testBfs() {
+    var traverseList = Traverse.bfs(tree);
+    assertEquals('a', traverseList.get(0));
+    assertEquals('b', traverseList.get(1));
+    assertEquals('c', traverseList.get(2));
+    assertEquals('d', traverseList.get(3));
+    assertEquals('e', traverseList.get(4));
+    assertEquals('f', traverseList.get(5));
+    assertEquals('g', traverseList.get(6));
   }
 
 }

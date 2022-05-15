@@ -5,28 +5,30 @@ import java.util.List;
 
 /**
  * @name Traverse
- * @description Implement tree data structure and its traverse method(BFS, DFS)
+ * @description Implement two traverse methods(BFS, DFS) for tree.
  */
-public class Traverse<T> {
-  private Tree<T> root;
-  private List<Tree<T>> traverseList;  // A list to store the traverse result of a tree.
+public class Traverse {
+  private static List<Object> traverseList;  // A list to store the traverse result of a tree.
 
-  public List<Tree<T>> bfs() {
-    traverseList = new ArrayList<Tree<T>>();
-    var tempList = new ArrayList<Tree<T>>();
-    tempList.add(root);
+  public static List<Object> bfs(Tree<Object> tree) {
+    traverseList = new ArrayList<Object>();
+    var tempList = new ArrayList<Tree<Object>>();
+    traverseList.add(tree.getData());
+    tempList.add(tree);
     while(tempList.size() > 0) {
-      Tree<T> firstNode = tempList.get(0); // Save the current node.
+      Tree<Object> firstNode = tempList.get(0); // Save the current node.
       tempList.remove(0);
 
-      for (Tree<T> node : firstNode.getChildren()) {
-        traverseList.add(node);
+      for (Tree<Object> childNode : firstNode.getChildren()) {
+        traverseList.add(childNode.getData());
+        tempList.add(childNode);
       }
     }
     return traverseList;
   }
 
-  public List<Tree<T>> dfs() {
+  public List<Object> dfs() {
+    traverseList = new ArrayList<Object>();
     // @TODO: implement DFS search.
 
     return traverseList;

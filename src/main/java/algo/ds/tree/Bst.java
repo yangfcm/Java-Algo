@@ -66,8 +66,14 @@ public class Bst {
   public void setLeft(int data) {
     this.left = new Bst(data);
   }
+  public void setLeft(Bst node) {
+    this.left = node;
+  }
   public void setRight(int data) {
     this.right = new Bst(data);
+  }
+  public void setRight(Bst node) {
+    this.right = node;
   }
 
   public static boolean isBst(Bst node) {

@@ -16,17 +16,45 @@ package algo.ds.tree;
  * If it is, return true; otherwise return false.
  */
 public class Bst {
-  private int data;
+  private Integer data;
   private Bst left;
   private Bst right;
   
-  public Bst(int data) {
+  public Bst(Integer data) {
     this.data = data;
     left = null;
     right = null;
   }
 
-  public int getData() {
+  public void add(Integer data) {
+    if(data < this.data) {
+      if(left == null) {
+        left = new Bst(data);
+      } else {
+        left.add(data);
+      }
+    } else if(data > this.data) {
+      if(right == null) {
+        right = new Bst(data);
+      } else {
+        right.add(data);
+      }
+    } else {
+      throw new Error("Parameter data is available in the tree.");
+    }   
+  }
+
+  public Bst find(Integer data) {
+    if(this.data == data) return this;
+    if(data < this.data && left != null) {
+      return left.find(data);
+    } else if(data > this.data && right != null) {
+      return right.find(data);
+    }
+    return null;
+  }
+
+  public Integer getData() {
     return data;
   }
   public Bst getLeft() {
@@ -34,5 +62,23 @@ public class Bst {
   }
   public Bst getRight() {
     return right;
+  }
+  public void setLeft(int data) {
+    this.left = new Bst(data);
+  }
+  public void setRight(int data) {
+    this.right = new Bst(data);
+  }
+
+  public static boolean isBst(Bst node) {
+    return isBst(node, null, null);
+  }
+
+  private static boolean isBst(Bst node, Integer min, Integer max) {
+    if(max != null && node.getData() > max) return false;
+    if(min != null && node.getData() < min) return false;
+    if(node.getLeft() != null && isBst(node.getLeft(), min, node.getData()) == false) return false;
+    if(node.getRight() != null && isBst(node.getRight(), node.getData(), max) == false) return false;
+    return true;
   }
 }

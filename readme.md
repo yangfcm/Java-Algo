@@ -85,8 +85,6 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Dynamic - `/dynamic`
 
-**_TODO_**
-
 1. `GridTraveler.java`
 
    A traveler begins in the top-left corner of a m x n grid and ends in the bottom-right corner. You may only move down or right. Calculate how many routes you can travel to the goal.
@@ -117,7 +115,95 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Data structure - `/ds`
 
-**_TODO_**
+`/ds/hash`
+
+1. `HashTable.java`
+
+   Implement a hash table
+
+`/ds/linkedlist`
+
+1. `MyLinkedlist.java`
+
+   Implement a linked list
+
+2. `MidPoint.java`
+
+   Get the middle node of a linked list
+
+3. `Circular.java`
+
+   Check if a linked list is circular
+
+4. `SearchFromLast.java`
+
+   Return the nth(starting at 0) node from the tail in a linked list
+
+5. `RemoveDuplicate.java`
+
+   Remove duplicates from an unsorted linked list
+
+6. `Partition.java`
+
+   Partition a linked list
+
+7. `SumLists.java`
+
+   Sum two linked list
+
+`/ds/stack_queue`
+
+1. `Weave.java`
+
+   Combine two queues into one
+
+2. `QueueFromStack.java`
+
+   Create a queue using two stacks, instead of arrays
+
+3. `GetMin.java`
+
+   Get the minimum number in a stack
+
+4. `SortStack.java`
+
+   Sort a stack
+
+5. `AnimalQueue.java`
+
+   Implement an animal queue
+
+6. `SetOfStacks.java`
+
+   Implement a stack of plates
+
+`/ds/tree`
+
+1. `Tree.java`
+
+   Implement a tree
+
+2. `Traverse.java`
+
+   Implement BFS and DFS traverse on a tree
+
+3. `Bst.java`
+
+   Implement a binary search tree and validate a binary search tree
+
+4. `MinimalBst.java`
+
+   Create a binary search tree with minimal height based on a ascend-sorted array
+
+5. `ListOfDepths.java`
+
+   Create an array of all the nodes at each depth.
+
+`/ds/graph`
+
+1. `Graph.java`
+
+   Implement a graph class and its relevant methods, including DFS and BFS
 
 ### Maths - `/mathematics`
 
@@ -218,23 +304,23 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ### Searching - `/searching`
 
-1. `LinearSearch.js`
+1. `LinearSearch.java`
 
    Implement linear search
 
-2. `BinarySearch.js`
+2. `BinarySearch.java`
 
    Implement binary search
 
-3. `JumpSearch.js`
+3. `JumpSearch.java`
 
    Implmenet jump search
 
-4. `InterpolationSearch.js`
+4. `InterpolationSearch.java`
 
    Implement interpolation search
 
-5. `ExponentialSearch.js`
+5. `ExponentialSearch.java`
 
    Implement exponential search
 

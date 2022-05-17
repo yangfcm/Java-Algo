@@ -63,6 +63,9 @@ public class Bst {
   public Bst getRight() {
     return right;
   }
+
+  // setLeft and setRight makes it possible to add any random data to the binary tree,
+  // which cannot guarantee it is to be *balanced*.
   public void setLeft(int data) {
     this.left = new Bst(data);
   }

@@ -27,10 +27,23 @@ public class ListOfDepthsTest {
     node = null;
   }
 
-  @DisplayName("Should be able to create lists")
+  @DisplayName("Solution1 Should be able to create lists")
   @Test
-  public void testSolution() {
-    var lists = ListOfDepths.solution(node);
+  public void testSolution1() {
+    var lists = ListOfDepths.solution1(node);
+    assertEquals(5, lists.get(0).get(0).getData());
+    assertEquals(3, lists.get(1).get(0).getData());
+    assertEquals(7, lists.get(1).get(1).getData());
+    assertEquals(2, lists.get(2).get(0).getData());
+    assertEquals(4, lists.get(2).get(1).getData());
+    assertEquals(6, lists.get(2).get(2).getData());
+    assertEquals(1, lists.get(3).get(0).getData());
+  }
+
+  @DisplayName("Solution2 Should be able to create lists")
+  @Test
+  public void testSolution2() {
+    var lists = ListOfDepths.solution2(node);
     assertEquals(5, lists.get(0).get(0).getData());
     assertEquals(3, lists.get(1).get(0).getData());
     assertEquals(7, lists.get(1).get(1).getData());

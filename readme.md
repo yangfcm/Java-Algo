@@ -302,6 +302,10 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
    Implmenet selection sorting
 
+4. `CountingSort.java`
+
+   Implement counting sort
+
 ### Searching - `/searching`
 
 1. `LinearSearch.java`

@@ -2,7 +2,7 @@
 
 ## Intro
 
-Interview: Algorithms problems and solutions written in Java, including test cases.
+Algorithms, Data Structure problems and solutions written in Java, including test cases.
 
 ## Algorithms problems content
 
@@ -330,7 +330,7 @@ Interview: Algorithms problems and solutions written in Java, including test cas
 
 ## Development Environment
 
-- Java 11
+- [Java 11](https://www.oracle.com/java/technologies/downloads/#java11)
 - [Gradle](https://docs.gradle.org/current/userguide/installation.html)
 - [Junit5](https://junit.org/junit5/docs/current/user-guide/#overview)
 

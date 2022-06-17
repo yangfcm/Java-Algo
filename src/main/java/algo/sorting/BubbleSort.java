@@ -1,13 +1,6 @@
 package algo.sorting;
 
-/** Implement bubble sorting */
-// Bubble sorting:
-// From i=0 to i<array length
-// --From j=0 to (array length - i)
-// ----If the element at j is greater than its next element(j+1)
-// ------Swap elements j and j+1
-
-public class BubbleSorting {
+public class BubbleSort {
   public static int[] solution(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < (arr.length - 1 - i); j++) {

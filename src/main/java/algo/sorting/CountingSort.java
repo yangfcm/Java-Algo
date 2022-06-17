@@ -2,9 +2,6 @@ package algo.sorting;
 
 import java.util.Arrays;
 
-/**
- * Implement counting sort
- */
 public class CountingSort {
   public static int[] solution(int[] arr) {
     int[] sorted = new int[arr.length];

@@ -3,14 +3,19 @@ package algo.array;
 import java.util.*;
 
 /**
- * Given an array of integers representing the color of each sock, determine how
- * many pairs of socks with matching colors there are. For example, there are n
- * = 7 socks with colors arr=[1,2,1,2,1,3,2]. There is one pair of color 1 and
- * one of color 2. There are three odd socks left, one of each color. So the
- * number of pairs is 2.
+ * @name SockMerchant
+ * @description Given an array of integers representing the color of each sock,
+ * determine how many pairs of socks with matching colors there are.
+ * @example There are n = 7 socks with colors arr=[1,2,1,2,1,3,2].
+ * There is one pair of color 1 and one of color 2.
+ * There are three odd socks left, one of each color. So the number of pairs is 2.
  */
-
 public class SockMerchant {
+  /**
+   * @param arr
+   * @return The pairs of matched socks
+   * @solution Iterate through the array and find out each pair.
+   */
   static public int solution(int[] arr) {
     int pairs = 0;
     var socksMap = new Hashtable<Integer, Integer>();

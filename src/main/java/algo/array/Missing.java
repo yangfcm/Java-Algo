@@ -3,18 +3,23 @@ package algo.array;
 import java.util.stream.IntStream;
 
 /**
- * Take an unsorted array of unique numbers from 1 to n. Return the missing
- * number in the sequence or null if there is no missing number There is either
- * no missing number or exactly one missing number.
+ * @name Missing
+ * @description Take an unsorted array of unique numbers from 1 to n.
+ * Return the missing number in the sequence or undefined if there is no missing number
+ * There are either no missing numbers or exactly one missing number.
+ * Do it in O(N) time.
+ * @example arr = [1, 4, 3, 5], missing(arr) -> 2
+ * arr = [2, 3, 4, 1], missing(arr) -> undefined
+ * arr = [], missing(arr) -> undefined
  */
-// e.g.!-- [1, 4, 3, 5] => 2
-// [2, 3, 4, 1] => null
-// [] => null
 public class Missing {
   /**
-   * Solution 1: find the max number of the array If max number equals array's
-   * length, it means no missing number so return null Otherwise, increment i from
-   * 1 to max; if i odesn't exist in the array, it is exactly the missint number.
+   * @param arr
+   * @return A missing number or null.
+   * @solution Solution1: Sum the array and keep track of the maximum number in it.
+   * Now, with the maximum number, we can calculate what we should expect the sum to be.
+   * If the expected sum equals to the sum of the array, it means there's no missing number.
+   * Otherwise, the missing number is exactly the difference between expected sum and the sum of array.
    */
   public static Integer solution1(int[] arr) {
     if (arr.length == 0) {
@@ -34,20 +39,14 @@ public class Missing {
       if (!IntStream.of(arr).anyMatch(x -> x == k)) {
         return k;
       }
-      // for (int n : arr) {
-      // if (n == i) {
-      // found = true;
-      // }
-      // }
-      // if (!found) {
-      // return i;
-      // }
     }
     return null;
   }
 
   /**
-   * Solution 2: The first step is same to solution 1: find the max number. Then
+   * @param arr
+   * @return A missing number or null.
+   * @solution Solution2: The first step is same to solution 1: find the max number. Then
    * calculate the sum of the array. If there is no missing number, its sum should
    * be (max+1) * (max/2) If the sum equals to that, no missing number, otherwise,
    * the difference is just the missing number.

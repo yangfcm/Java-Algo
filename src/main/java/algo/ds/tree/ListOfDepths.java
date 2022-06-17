@@ -7,7 +7,7 @@ import java.util.List;
  * @name ListOfDepths
  * @description  Given a binary(not necessarily balanced) tree, create an array/list of all the nodes at each level.
  * If you have a tree with N levels, you'll have N arrays/lists.
- * --- Example
+ * @Example
  * Given:
  *      0
  *    /   \

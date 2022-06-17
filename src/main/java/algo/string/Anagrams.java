@@ -2,15 +2,22 @@ package algo.string;
 
 import java.util.*;
 
-/*
- * Anagram: Check to see if two provided strings are anagrams of each other. One
- * string is an anagram of the other if it uses the same characters in the same
- * quantity. Requirements: only conside characters, not spaces or punctuation or number. Conside capital
- * letters to be the same as lower case e.g. anagrams('rail safety', 'fairy
- * tales') --> true anagrams('RAIL! SAFETY!', 'fairy tales') --> true
- * angagrams('Hi, there', 'Bye, there') --> false
+/**
+ * @name Anagrams
+ * @description Check to see if two provided strings are anagrams of each other.
+ * One string is an anagram of the other if it uses the same characters in the same quantity.
+ * Only conside characters, not spaces or punctuation.
+ * Conside capital letters to be the same as lower case.
+ * @example anagrams('rail safety', 'fairy tales') -> true
+ * anagrams('RAIL! SAFETY!', 'fairy tales')  -> true
+ * angagrams('Hi, there', 'Bye, there') -> false
  */
 public class Anagrams {
+  /**
+   * @description Remove spaces, punctuations etc. from string and convert it to all lowercase letters.
+   * @param str
+   * @return A clean string. 
+   */
   private static String cleanString(String str) {
     String pattern = "\\W";
     String clearedStr = str.replaceAll(pattern, "");
@@ -18,8 +25,10 @@ public class Anagrams {
   }
 
   /**
-   * Sort a string on alphabetic order and return the sorted string
-   * e.g.'sad'->'ads'
+   * @description Sort a string on alphabetic order and return the sorted string
+   * @example 'sad'->'ads'
+   * @param str
+   * @return The alphabetically-ordered string.
    */
   private static String Alphabetize(String str) {
     String[] strArr = cleanString(str).split("");
@@ -28,9 +37,11 @@ public class Anagrams {
   }
 
   /**
-   * Convert a string to a character map. Its key is the character in the string
-   * and its value is the number of occurrence for the charcter e.g. bool => {"b":
-   * 1, "o": 2, "l": 1}
+   * @description Convert a string to a character map. 
+   * Its key is the character in the string and its value is the number of occurrence for the charcter
+   * @example bool => {"b": 1, "o": 2, "l": 1}
+   * @param str
+   * @return A character map.
    */
   private static HashMap<Character, Integer> strToCharMap(String str) {
     String cleanStr = cleanString(str);
@@ -45,10 +56,11 @@ public class Anagrams {
     }
     return charMap;
   }
-
-  /*
-   * Solution 1: Split string to array, sort it alphabetically and joint it back
-   * to a string Then compare the two strings
+  /**
+   * @param str1
+   * @param str2
+   * @return True if str1 and str2 are anagrams of each other, otherwise false.
+   * @solution Split string to array, sort it alphabetically and joint it back to a string Then compare the two strings
    */
   public static boolean runSolutionOne(String str1, String str2) {
     var sortedStr1 = Alphabetize(str1);
@@ -56,11 +68,12 @@ public class Anagrams {
     return sortedStr1.equals(sortedStr2);
   }
 
-  /*
-   * Solution 2: Remove spaces, punctuations from strings(use regular expression)
-   * and covert strings to lower case Create two character maps(object) of both
-   * strings, just as what we did in maxchar.js Compare the length of two
-   * character maps and their values.
+  /**
+   * @param str1
+   * @param str2
+   * @return True if str1 and str2 are anagrams of each other, otherwise false.
+   * @solution Remove spaces, punctuations from strings(use regular expression) and covert strings to lower case. 
+   * Create two character maps of both strings and compare their values.
    */
   public static boolean runSolutionTwo(String str1, String str2) {
     var charMap1 = strToCharMap(str1);

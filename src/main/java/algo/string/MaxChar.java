@@ -2,12 +2,19 @@ package algo.string;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
- * Max character Give a string, return the character that is most commonly used
- * in the string
+ * @name MaxChar
+ * @description Given a string, return the character that is most commonly used in the string.
+ * @example 'abccccccdd' -> c
  */
 public class MaxChar {
+  /**
+   * @param str
+   * @return A character that is mostly used in str.
+   * @solution Create a character map(object) to record the count each character the string.
+   * Example: 'aabccc' => {'a': 2, 'b': 1, 'c': 3} 
+   * Then iterate the object and return the key with the largest value.
+   */
   static public char solution(String str) {
     var charMap = new HashMap<Character, Integer>();
     int max = 0; // The count of the most-frequently-used character of a string

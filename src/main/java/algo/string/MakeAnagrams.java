@@ -3,23 +3,22 @@ package algo.string;
 import java.util.*;
 
 /**
- * @name makeAnagrams
+ * @name MakeAnagrams
  * @description Given two strings, str1 and str2, determine the minimum number
- *              of characters deletions required to make str1 and str2 anagrams.
- *              The strings str1 and str2 consist of lowercase English letters
- *              [a-z].
- * @example makeAnagrams('abcd','dcefg') -> 5 delete a, b from 'abcd' and delete
- *          e,f,g from 'dcefg' to make 'cd' and 'dc', which are anagrams. That
- *          is 5 deletions.
- * @link https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+ * of characters deletions required to make str1 and str2 anagrams.
+ * The strings str1 and str2 consist of lowercase English letters [a-z].
+ * @example 'abcd' and 'dcefg' -> 5 delete a, b from 'abcd' 
+ * and delete e,f,g from 'dcefg' to make 'cd' and 'dc', which are anagrams. 
+ * That is 5 deletions. 
  */
 public class MakeAnagrams {
   private static String LETTERS = "abcdefghijklmnopqrstuvwxyz";
 
   /**
-   * Convert a string to a character map. Its key is the character in the string
-   * and its value is the number of occurrence for the charcter e.g. bool => {"b":
-   * 1, "o": 2, "l": 1}
+   * @param str
+   * @return A character map.
+   * @solution Convert a string to a character map. Its key is the character in the string
+   * and its value is the number of occurrence for the charcter
    */
   private static HashMap<Character, Integer> strToCharMap(String str) {
     HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
@@ -34,6 +33,13 @@ public class MakeAnagrams {
     return charMap;
   }
 
+  /**
+   * @param str1
+   * @param str2
+   * @return The minimum number of characters deletions to make str1 and str2 anagrams.
+   * @solution Use charMaps for str1 and str2, compare each key and increment the difference for each key.
+   * The total difference is just the minmum deletions required to make str1 and str2 anagrams.
+   */
   public static int Solution(String str1, String str2) {
     int deletions = 0;
     var charMap1 = strToCharMap(str1);

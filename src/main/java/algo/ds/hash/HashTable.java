@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * @name HashTable
  * @description Implement a hash table
- * @note When implementing hash table in Java, there's some difference in terms of the language features.
+ * @implNote When implementing hash table in Java, there's some difference in terms of the language features.
  * 1. Java doesn't have built-in data structure that allows you to store multiple different typed values. 
  * In dynamic languages, like JS, python, it's not an issue; In typed language(C# to be more specific), it actually provides *tuples* that is used to solve this.
  * So to tackle issue, you'll have to create your own data structure, called *HashNode* in this case.

@@ -3,11 +3,19 @@ package algo.string;
 import java.util.*;
 
 /**
- * Check if one string is a permutation of another. Solution: Create character
- * maps for both str1 and str2 and compare them. If each character has the same
- * value(count of characters), they are permutation, otherwise, they are not.
+ * @name CheckPermutation
+ * @description Given two strings, check if one is a permutation of the other.
+ * The problem is very similar to "anagrams".
  */
 public class CheckPermutation {
+  /**
+   * @param str1
+   * @param str2
+   * @return True if str1 is a permutation of str2, otherwise false.
+   * @solution Create character maps for both str1 and str2 and compare them.
+   * If each character has the same value(count of characters), they are permutation,
+   * otherwise, they are not.
+   */
   public static boolean solution(String str1, String str2) {
     if (str1.length() != str2.length()) {
       return false;

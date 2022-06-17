@@ -3,16 +3,19 @@ package algo.string;
 import java.util.HashMap;
 
 /**
- * Given a string, check if it is a permutation of a palindrome. Check is case
- * insensitive. e.g. Test TactCoa should return true because it has
- * permutations: "tacocat", "atcocta", which are palindromes. Of course, it is
- * impossible to generate all permutations of a string and test if it is a
- * palindrome one by one. To solve this, create a character map, with key is the
- * characters of the string and value is the occurence of the character. If the
- * string is a permutation of a palindrome, it must have at most one character
- * that has appeared in the string odd-number times.
+ * @name PalindromePermutation
+ * @description Given a string, check if it is a permutation of a palindrome.
+ * Check is case insensitive.
+ * @example "TactCoa" -> true because it has permutations: "tacocat", "atcocta", which are palindromes. 
  */
 public class PalindromePermutation {
+  /** 
+   * @param str
+   * @return true if str has permutations which are palindromes, otherwise false.
+   * @solution Of course, it is impossible to generate all permutations of a string and test if it is a palindrome one by one.
+   * To solve this, create a character map, with key is the characters of the string and value is the occurence of the character.
+   * If the string is a permutation of a palindrome, it must have at most one character that has appeared in the string odd-number times.
+   */
   public static boolean solution(String str) {
     HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
     String lStr = str.toLowerCase(); // As it is case insensitive, convert the string to lower case.

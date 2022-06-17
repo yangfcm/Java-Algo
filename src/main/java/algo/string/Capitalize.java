@@ -1,17 +1,19 @@
 package algo.string;
 
-/* 
- Capitalize:
- Give a string, capitalize the first letter of each word
- in the string then return the capitalized string.
- e.g. it is so good --> It Is So Good
+/**
+ * @name Captialize
+ * @description Given a string, capitalize the first letter of each word in the string then return the capitalized string.
+ * @example capitalize('it is so good!') -> It Is So Good
  */
 public class Capitalize {
-  /*
-   * Solution one: Create an empty string Iterate each character in the string
-   * Capitalize the fist letter and add it to 'result' If the character to the
-   * left is a space, capitalize it and add it to 'result' Otherwise, add it to
-   * 'result' directly
+  /**
+   * @param str
+   * @return A string that capitalizes the first letter of each word in str
+   * @solution Create an empty string.
+   * Iterate each character in the string
+   * Capitalize the fist letter and add it to 'result'. 
+   * If the character to the left is a space, capitalize it and add it to 'result'.
+   * Otherwise, add it to 'result' directly
    */
   public static String SolutionOne(String str) {
     String capStr = str.substring(0, 1).toUpperCase();
@@ -26,11 +28,12 @@ public class Capitalize {
     }
     return capStr;
   }
-
   /**
-   * Solution two: Split the string by spaces to an array. Iterate teh array and
-   * uppercase the first letter of each word Join the array to a string and return
-   * it.
+   * @param str
+   * @return A string that capitalizes the first letter of each word in str
+   * @solution Split the string by spaces to an array. 
+   * Iterate the array and uppercase the first letter of each word. 
+   * Join the array to a string and return it.
    */
   public static String SolutionTwo(String str) {
     String[] strArr = str.split(" ");

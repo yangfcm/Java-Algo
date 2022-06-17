@@ -3,9 +3,15 @@ package algo.string;
 import java.util.Arrays;
 
 /**
- * Return the number of vowels used in a string e.g.!-- "apple" => 2 "why?" => 0
+ * @name CountVowels
+ * @description Return the number of vowels used in a string
+ * @example "apple" => 2 "why?" => 0
  */
 public class CountVowels {
+  /**
+   * @param str
+   * @return The number of vowels in the str
+   */
   public static int solution(String str) {
     Character[] vowels = { 'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u' };
     int vowelsCount = 0;

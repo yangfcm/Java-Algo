@@ -1,13 +1,25 @@
 package algo.string;
 
 /**
- * There are three types of edits that can be performed on a string: insert a
- * character, remove a character or replace a character. Given two strings,
- * check if they are one edit(or zero edit) away. e.g. pale, ple -> true(remove
- * a character) pale, pales -> true(add a character) pale, bale -> true(replace
- * a character) pale, bake -> false
+ * @name OneAway
+ * @description Assume there are three types of edits that can be performed on a string:
+ * insert a character, remove a character or replace a character.
+ * Given two strings, check if they are one edit(or zero edit) away to the other string.
+ * @example pale, ple -> true(remove a character)
+ * pale, pales -> true(add a character)
+ * pale, bale -> true(replace a character)
+ * pale, bake -> false
  */
 public class OneAway {
+  /**
+   * @param str1
+   * @param str2
+   * @return true if str1 is one edit away to str2, otherwise false
+   * @solution This solution considers three scenarios in comparison of the length of str1 and str2.
+   * If the diff of str1's length and str2's length is more than 1, return false,
+   * If the diff of str1's length and str2's length is exactly 1, return true if the longer string equals short string by removing one character.
+   * If the diff of str1's length and str2's length is the same, return true if they have zero or one different character and false if they have more tha 1 different characters.
+   */
   public static boolean solution(String str1, String str2) {
     int lengthDiff = Math.abs(str1.length() - str2.length());
     if (lengthDiff > 1) {

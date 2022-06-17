@@ -9,12 +9,12 @@ import java.util.Map;
  * The function should return the number of ways that the target can be
  * constructed by concatenating elements of the strs array.
  * You may use elements in strs as many times as needed.
- * e.g. countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl' ]) -> 2 i.e. 'purp' + 'le', 'p'+'ur'+'p'+'le'
+ * @example target = 'purple', strs = ['purp', 'p', 'ur', 'le', 'purpl' ]) -> 2
+ * There are two ways of constructing purple: 'purp' + 'le', 'p'+'ur'+'p'+'le', so 2 is our answer.
 */
 public class CountConstruct {
 
   /**
-   * solution1
    * @param target
    * @param strs
    * @return the number of ways target can be constructed with strings from strs
@@ -33,7 +33,6 @@ public class CountConstruct {
   }
 
   /**
-   * solution2
    * @param target
    * @param strs
    * @return the number of ways target can be constructed with strings from strs
@@ -58,7 +57,6 @@ public class CountConstruct {
   }
 
   /**
-   * solution3
    * @param target
    * @param strs
    * @return the number of ways target can be constructed with strings from strs

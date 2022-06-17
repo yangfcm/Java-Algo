@@ -3,7 +3,8 @@ package algo.mathematics;
 import static java.lang.Math.*;
 
 /**
- * Return true or false, indicating whether a given number is a prime
+ * @name IsPrime
+ * @description Check if a given number is a prime number or not.
  */
 public class IsPrime {
   public static boolean run(int num) {

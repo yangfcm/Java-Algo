@@ -1,10 +1,17 @@
 package algo.mathematics;
 
 /**
- * Given a number N, print the numbers from 1 to N. But for multiples of 3 print
- * 'fizz' instead of the number, for multiples of 5, print 'buzz', for numbers
- * which are multiples of both 3 and 5, print 'fizzbuzz' For example:
- * fizzbuzz(5); 1 2 fizz 4 buzz
+ * @name Fizzbuzz
+ * @description  Given a number N, console logs the numbers from 1 to N.
+ * But for multiples of 3 print 'fizz' instead of the number,
+ * for multiples of 5, print 'buzz',
+ * for numbers which are multiples of both 3 and 5, print 'fizzbuzz'
+ * @example fizzbuzz(5) ->
+ *   1
+ *   2
+ *   fizz
+ *   4
+ *   buzz
  */
 public class Fizzbuzz {
   public static void run(int n) {

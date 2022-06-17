@@ -10,11 +10,11 @@ import java.util.Map;
  * The function should return a list of arrays containing all of the ways that the target can be
  * constructed by concatenating elements of the strs array.
  * You may use elements in strs as many times as needed.
+ * @example target = 'purple' strs = ['purp', 'p', 'ur', 'le', 'purpl' ] ->  [['purp','le'], ['p','ur','p','le']
  */
 public class AllConstruct {
 
   /**
-   * solution1
    * @param target
    * @param strs
    * @return A list of all combinations to get the target string
@@ -41,7 +41,6 @@ public class AllConstruct {
   }
 
   /**
-   * solution2
    * @param target
    * @param strs
    * @return A list of all combinations to get the target string
@@ -83,7 +82,6 @@ public class AllConstruct {
   }
 
   /**
-   * solution3
    * @param target
    * @param strs
    * @return A list of all combinations to get the target string

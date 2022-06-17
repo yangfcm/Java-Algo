@@ -1,23 +1,33 @@
 package algo.assorted;
 
 /**
- * Accept a positive number n The function should console write a pyramid shape
- * with n levels using # character. Make sure the step has spaces on both left
- * and right side.
+ * @name DrawPyramid
+ * @description Write a function that accepts a position number and print a pyramid shape with N levels,
+ * using # character and space(s) on both left and right side.
+ * @example
+ *   pyramid(1)
+ *       '#'
+ *   pyramid(2)
+ *       ' # '
+ *       '###'
+ *   pyramid(3)
+ *       '  #  '
+ *       ' ### '
+ *       '#####'
  */
-// e.g.!-- 2 =>
-// ' # '
-// '###'
-// 3 =>
-// ' # '
-// ' ### '
-// '#####'
-// 4 =>
-// ' # '
-// ' ### '
-// ' ##### '
-// '#######'
 public class DrawPyramid {
+  /**
+   * 
+   * @param n
+   * @solution From 0 to n(iterate through rows)
+   *   Create an empty string, 'level'
+   *   From 0 to 2n-1 (columns)
+   *   IF the column should have a '#'
+   *     Add a '#' to 'level'
+   *   ELSE
+   *     Add a space to 'level'
+   * print 'level'
+   */
   public static void solution(int n) {
     for (int i = 1; i <= n; i++) {
       String level = "";

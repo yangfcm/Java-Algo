@@ -13,11 +13,12 @@ import java.util.Map;
  * You may use an element of the array as many times as needed.
  * Assum all input numbers are non-negative.
  * It is a follow-up problem to CanSum and HowSum.
+ * @example target = 7, numbers = [2, 3] ->[2, 3, 2]
+ * target = 7, numbers = [5, 3, 4, 7] -> [7] There are two possible combinations: [3, 4] and [7] but [7] has only one element, which is the answer.
  */
 public class BestSum {
   
   /**
-   * solution1
    * @param target
    * @param numbers
    * @return The shortest combination of numbers that add up to exactly the target sum.
@@ -43,7 +44,6 @@ public class BestSum {
   }
 
   /**
-   * solution2
    * @param target
    * @param numbers
    * @return The shortest combination of numbers that add up to exactly the target sum.
@@ -76,7 +76,6 @@ public class BestSum {
   }
 
   /**
-   * solution3
    * @param target
    * @param numbers
    * @return The shortest combination of numbers that add up to exactly the target sum.

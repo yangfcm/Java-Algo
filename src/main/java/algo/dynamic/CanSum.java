@@ -7,6 +7,9 @@ import java.util.HashMap;
  * @description Given a target number and an array of numbers, 
  * find out if it is possible to generate the target sum using the numbers from the array. 
  * You may use an element of the array as many times as needed.
+ * @example target = 7, numbers = [2, 3] -> true (2 + 2 + 3 = 7)
+ * target = 7, numbers = [5, 3, 4, 7] -> true (7 = 7) or (3 + 4 = 7)
+ * target = 7, numbers = [2, 4] -> false
  */
 public class CanSum {
   /**

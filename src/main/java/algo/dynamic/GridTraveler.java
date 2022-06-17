@@ -8,6 +8,18 @@ import java.util.HashMap;
  * You begin in the top-left corner and end in the bottom-right corner.
  * You may only move down or right.
  * Create algorithm to calculate how many routes you can travel to the goal on a grid with dimensions m*n.
+ * @example m = 2, n = 3
+ * It creates a 2 x 3 grid, which looks like this:
+ * +---+---+---+
+ * + a +   +   +
+ * +---+---+---+
+ * +   +   + b +
+ * +---+---+---+
+ * To travel from a to b, you can have 3 routes in total as below:
+ * R -> R -> D
+ * R -> D -> R
+ * D -> R -> R
+ * R - right, D - down.
  */
 public class GridTraveler {
 

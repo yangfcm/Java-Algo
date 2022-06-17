@@ -2,6 +2,10 @@ package algo.mathematics;
 
 import java.util.*;
 
+/**
+ * @name Fibonacci
+ * @description Return the n-th number in the fibonacci series.
+ */
 public class Fibonacci {
   public static long solutionOne(int n) {
     if (n < 2)

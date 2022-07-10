@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 @DisplayName("Test sorting/FradulentActivityNotice")
 public class FradulentActivityNoticeTest {
-  @ParameterizedTest(name = "Test solutions")
+  @ParameterizedTest(name = "Solution should return correct count of notice.")
   @MethodSource("dataSource")
   void testSolution(int[] exp, int d, int count) {
     assertEquals(FradulentActivityNotice.solution(exp, d), count);

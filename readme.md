@@ -306,6 +306,10 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 
    Implement counting sort
 
+5. `FradulentActivityNotice.java`
+
+   Fradulent activity notice. An application in counting sort.
+
 ### Searching - `/searching`
 
 1. `LinearSearch.java`

@@ -13,7 +13,7 @@ public class SelectionSortTest {
   @Test
   @DisplayName("Selection sorting should sort the array")
   public void testSelectionSorting() {
-    SelectionSor.solution(arr);
+    SelectionSort.solution(arr);
     assertArrayEquals(sorted, arr);
   }
 }

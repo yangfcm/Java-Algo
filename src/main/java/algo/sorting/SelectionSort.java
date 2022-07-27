@@ -1,6 +1,6 @@
 package algo.sorting;
 
-public class SelectionSor {
+public class SelectionSort {
   public static void solution(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
       int indexOfMin = i;

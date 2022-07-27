@@ -310,6 +310,10 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 
    Fradulent activity notice. An application in counting sort.
 
+6. `countInversions.js`
+
+   Count how many inversions required to sort an unordered array.
+
 ### Searching - `/searching`
 
 1. `LinearSearch.java`

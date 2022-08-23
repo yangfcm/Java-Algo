@@ -205,6 +205,12 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 
    Implement a graph class and its relevant methods, including DFS and BFS
 
+### Greedy - `/greedy`
+
+1. `MinimumAbsoluteDifference.java`
+
+   Find out the minimum absolute difference between any two numbers in a given array.
+
 ### Maths - `/mathematics`
 
 1. `Fibonacci.java`

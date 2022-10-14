@@ -63,3 +63,7 @@
 16. `StringRotation.java`
 
     Check if one string is the rotation of the other string, using isSubString function
+
+17. `ValidString.java`
+
+    Check if a string is valid as per a certain rule

@@ -44,4 +44,22 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 
 ## How to run
 
-Under project root directory: `./gradlew test`.
+Under project directory:
+
+1. Run all tests
+
+```
+./gradlew test
+```
+
+2. Run all tests under a particular directory
+
+```
+./gradlew test --tests 'algo.array.*'
+```
+
+3. Run one or multiple tests with wildcard
+
+```
+./gradlew test --tests '*IsSorted*'
+```

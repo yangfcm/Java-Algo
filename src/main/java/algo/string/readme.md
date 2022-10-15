@@ -56,14 +56,18 @@
 
     Reverse a string
 
-15. `StringCompression.java`
+15. `SpecialString.java`
+
+    How many special strings
+
+16. `StringCompression.java`
 
     Compress a string
 
-16. `StringRotation.java`
+17. `StringRotation.java`
 
     Check if one string is the rotation of the other string, using isSubString function
 
-17. `ValidString.java`
+18. `ValidString.java`
 
     Check if a string is valid as per a certain rule

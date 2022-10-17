@@ -15,3 +15,7 @@
 4. `MinimumAbsoluteDifference.java`
 
    Find out the minimum absolute difference between any two numbers in a given array.
+
+5. `ReverseShuffleMerge.java`
+
+   Find out the smallest string from certain operations.

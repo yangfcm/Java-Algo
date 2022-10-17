@@ -1,7 +1,6 @@
 package algo.greedy;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.stream.Stream;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

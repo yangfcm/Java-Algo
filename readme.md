@@ -20,7 +20,7 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 - [Math](./src/main/java/algo/mathematics)
 - [String](./src/main/java/algo/string)
 
-### Data structure - `/ds`
+### Data structure
 
 - [Stack and Queue](./src/main/java/algo/ds/stack_queue)
 - [Linked List](./src/main/java/algo/ds/linkedlist)
@@ -28,11 +28,11 @@ Algorithms, Data Structure problems and solutions written in Java, including tes
 - [Tree](./src/main/java/algo/ds/tree)
 - [Graph](./src/main/java/algo/ds/graph)
 
-### Sorting - `/sorting`
+### Sorting
 
 - [Sorting](./src/main/java/algo/sorting)
 
-### Searching - `/searching`
+### Searching
 
 - [Searching](./src/main/java/algo/searching)
 

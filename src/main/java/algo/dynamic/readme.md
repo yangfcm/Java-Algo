@@ -27,3 +27,7 @@
 7. `AllConstruct.java`
 
    Follow up the previous problem: return all the ways to construct the target string by concatenating elements of the strings array.
+
+8. `CommonChild.java`
+
+   Find out the longest common 'child' string of two given strings.

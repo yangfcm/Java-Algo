@@ -18,9 +18,9 @@ public class ReverseShuffleMergeTest {
 
   static Stream<Arguments> dataSource() {
     return Stream.of(
-      // Arguments.arguments("eggegg", "egg"),
-      // Arguments.arguments("abcdefgabcdefg", "agfedcb"),
-      // Arguments.arguments("aeiouuoiea", "aeiou"),
+      Arguments.arguments("eggegg", "egg"),
+      Arguments.arguments("abcdefgabcdefg", "agfedcb"),
+      Arguments.arguments("aeiouuoiea", "aeiou"),
       Arguments.arguments("bdabaceadaedaaaeaecdeadababdbeaeeacacaba", "aaaaaabaaceededecbdb")
     );
   }

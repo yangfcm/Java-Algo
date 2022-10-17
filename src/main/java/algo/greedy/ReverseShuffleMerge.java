@@ -24,7 +24,7 @@ import java.util.List;
 public class ReverseShuffleMerge {
 
   /**
-   * @description Sort characters in a given string.
+   * @description Helper function: Sort characters in a given string.
    * @param str
    * @return a character-sorted string
    * @example str = 'apple' -> 'aelpp'
@@ -36,7 +36,7 @@ public class ReverseShuffleMerge {
   }
 
   /**
-   * @description Reverse characters in a string
+   * @description Helper function: Reverse characters in a string
    * @param str
    * @return a character-reversed string
    * @example str = 'apple' -> 'elppa'
@@ -50,7 +50,7 @@ public class ReverseShuffleMerge {
   }
 
   /**
-   * @description Given a sorted string where each character appears even number times. Return a new string by halving it.
+   * @description Helper function: Given a sorted string where each character appears even number times. Return a new string by halving it.
    * @param str
    * @return a halved string
    * @example str = 'aabbbbcc' -> 'abbc'
@@ -64,7 +64,7 @@ public class ReverseShuffleMerge {
   }
 
   /**
-   * @description Convert a string to a character map. 
+   * @description Helper function: Convert a string to a character map. 
    * Its key is the character in the string and its value is the number of occurrence for the charcter
    * @example bool => {"b": 1, "o": 2, "l": 1}
    * @param str
@@ -83,7 +83,7 @@ public class ReverseShuffleMerge {
   }
 
   /**
-   * @description Convert a list of characters to a string.
+   * @description Helper function: Convert a list of characters to a string.
    * @example charList = ['a', 'p', 'p', 'l', 'e'] -> "apple"
    * @param charList
    * @return A string composed of characters in charList
@@ -111,9 +111,8 @@ public class ReverseShuffleMerge {
     HashMap<Character, Integer> letterCounts = strToCharMap(halfSortedStr);
     HashMap<Character, Integer> letterCountsShuffle = strToCharMap(halfSortedStr);
     String reversedStr = reverseString(s);
-    System.out.println(reversedStr); 
 
-    var strArr = new ArrayList<Character>();
+    List<Character> strArr = new ArrayList<Character>();
     for(int i = 0; i < reversedStr.length(); i++) {
       Character ch = reversedStr.charAt(i);
       if(letterCounts.get(ch) > 0) {
@@ -122,7 +121,7 @@ public class ReverseShuffleMerge {
           strArr.get(strArr.size() - 1) > ch &&
           letterCountsShuffle.get(strArr.get(strArr.size() - 1)) > 0
         ) {
-          Character removed = strArr.remove(0);
+          Character removed = strArr.remove(strArr.size() - 1);
           letterCountsShuffle.put(removed, letterCountsShuffle.get(removed) - 1);
           letterCounts.put(removed, letterCounts.get(removed) + 1);
         }

@@ -6,6 +6,7 @@ import java.util.Arrays;
  * @name MinimumAbsoluteDifference
  * @description Given an array of integers, find the minimum absolute difference between any two elements in the array.
  * @example arr = [1 -3 71 68 17] -> 3 (|71-68|= 3)
+ * @source https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array
  */
 public class MinimumAbsoluteDifference {
 

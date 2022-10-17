@@ -10,6 +10,7 @@ import java.util.*;
  * @example s = abc -> valid. characters all appear once.
  * s = abcc -> valid. Just remove 'c' and the remaining characters all appear once.
  * s = abccc -> invalid.
+ * @source https://www.hackerrank.com/challenges/sherlock-and-valid-string/
  */
 public class ValidString {
   

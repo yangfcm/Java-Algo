@@ -14,6 +14,7 @@ import java.util.*;
  * [1, 2, 3, 1, 2], index: 2, 3, elements: arr[2] = 3, arr[3] = 1 -> 2 swaps -> [1, 1, 2, 3, 2]
  * [1, 1, 2, 3, 2], index: 3, 4, elements: arr[3] = 3, arr[4] = 2 -> 1 swap -> [1, 1, 2, 2, 3]
  * So the result is 1 + 2 + 1 = 4 swaps.
+ * @source https://www.hackerrank.com/challenges/ctci-merge-sort
  */
 public class CountInversions {
   private static int count = 0;

@@ -1,25 +1,25 @@
 ## Sorting
 
-1. `BubbleSorting.java`
+1. `BubbleSort.java`
 
    Implement bubble sorting
 
-2. `MergeSorting.java`
-
-   Implement merge sorting
-
-3. `SelectionSorting.java`
-
-   Implmenet selection sorting
-
-4. `CountingSort.java`
+2. `CountingSort.java`
 
    Implement counting sort
 
-5. `FradulentActivityNotice.java`
+3. `CountInversions.java`
+
+   Count how many inversions required to sort an unordered array.
+
+4. `FradulentActivityNotice.java`
 
    Fradulent activity notice. An application in counting sort.
 
-6. `countInversions.js`
+5. `MergeSort.java`
 
-   Count how many inversions required to sort an unordered array.
+   Implement merge sorting
+
+6. `SelectionSort.java`
+
+   Implmenet selection sorting

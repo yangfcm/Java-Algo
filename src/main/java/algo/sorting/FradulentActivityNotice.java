@@ -16,6 +16,7 @@ import java.util.Arrays;
  * Then on day 5, trailing 3 days expenditures are [20, 30, 40]. The median is 30 and D5's expenditure is 50.
  * Because 50 < 30 * 2, client will not get a notification on that day.
  * So, there will be 1 notification sent.
+ * @source https://www.hackerrank.com/challenges/fraudulent-activity-notifications
  */ 
 public class FradulentActivityNotice {
 

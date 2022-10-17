@@ -7,6 +7,7 @@ package algo.string;
  * 2. All the characters except the middle one are the same, like 'aadaa'.
  * Given a string s, determine how many special substrins can be formed from it.
  * @example s = mnonopoo -> 12. It has 12 special substrings, they are: 'm', 'n', 'o', 'n', 'o', 'p', 'o', 'o', 'non', 'ono', 'opo', 'oo'
+ * @source https://www.hackerrank.com/challenges/special-palindrome-again
  */
 public class SpecialString {
   

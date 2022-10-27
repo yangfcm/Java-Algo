@@ -11,10 +11,10 @@ import java.util.ArrayList;
 public class BTreeTraverse {
   private static List<Integer> traverseList = new ArrayList<Integer>();
 
-  public static List<Integer> preOrder(Bst node) {
+  public static int[] preOrder(Bst node) {
     traverseList = new ArrayList<Integer>();
     doPreOrderTraverse(node);
-    return traverseList;
+    return traverseList.stream().mapToInt(i -> i).toArray();
   }
 
   private static void doPreOrderTraverse(Bst node) {
@@ -24,10 +24,10 @@ public class BTreeTraverse {
     doPreOrderTraverse(node.getRight());
   }
 
-  public static List<Integer> inOrder(Bst node) {
+  public static int[] inOrder(Bst node) {
     traverseList = new ArrayList<Integer>();
     doInOrderTraverse(node);
-    return traverseList;
+    return traverseList.stream().mapToInt(i -> i).toArray();
   }
 
   private static void doInOrderTraverse(Bst node) {
@@ -37,10 +37,10 @@ public class BTreeTraverse {
     doInOrderTraverse(node.getRight());
   }
 
-  public static List<Integer> postOrder(Bst node) {
+  public static int[] postOrder(Bst node) {
     traverseList = new ArrayList<Integer>();
     doPostOrderTraverse(node);
-    return traverseList;
+    return traverseList.stream().mapToInt(i -> i).toArray();
   }
 
   private static void doPostOrderTraverse(Bst node) {

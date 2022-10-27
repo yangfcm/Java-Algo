@@ -1,6 +1,6 @@
 package algo.ds.tree;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -45,97 +45,46 @@ public class BTreeTraverseTest {
   @DisplayName("Test preorder traverse of b-tree 1.")
   @Test
   void testPreOrderTree1() {
-    var traverseList = BTreeTraverse.preOrder(root1);
-    assertEquals(1, traverseList.get(0));
-    assertEquals(2, traverseList.get(1));
-    assertEquals(4, traverseList.get(2));
-    assertEquals(5, traverseList.get(3));
-    assertEquals(3, traverseList.get(4));
+    assertArrayEquals(new int[]{1, 2, 4, 5, 3}, BTreeTraverse.preOrder(root1));
   }
 
   @DisplayName("Test preorder traverse of b-tree 2.")
   @Test
   void testPreOrderTree2() {
-    var traverseList = BTreeTraverse.preOrder(root2);
-    assertEquals(25, traverseList.get(0));
-    assertEquals(15, traverseList.get(1));
-    assertEquals(10, traverseList.get(2));
-    assertEquals(4, traverseList.get(3));
-    assertEquals(12, traverseList.get(4));
-    assertEquals(22, traverseList.get(5));
-    assertEquals(18, traverseList.get(6));
-    assertEquals(24, traverseList.get(7));
-    assertEquals(50, traverseList.get(8));
-    assertEquals(35, traverseList.get(9));
-    assertEquals(31, traverseList.get(10));
-    assertEquals(44, traverseList.get(11));
-    assertEquals(70, traverseList.get(12));
-    assertEquals(66, traverseList.get(13));
-    assertEquals(90, traverseList.get(14));
+    assertArrayEquals(
+      new int[]{25, 15, 10, 4, 12, 22, 18, 24, 50, 35, 31, 44, 70, 66, 90}, 
+      BTreeTraverse.preOrder(root2)
+    );
   }
 
   @DisplayName("Test inorder traverse of b-tree 1.")
   @Test
   void testInOrderTree1() {
-    var traverseList = BTreeTraverse.inOrder(root1);
-    assertEquals(4, traverseList.get(0));
-    assertEquals(2, traverseList.get(1));
-    assertEquals(5, traverseList.get(2));
-    assertEquals(1, traverseList.get(3));
-    assertEquals(3, traverseList.get(4));
+    assertArrayEquals(new int[] {4, 2, 5, 1, 3}, BTreeTraverse.inOrder(root1));
   }
 
   @DisplayName("Test inorder traverse of b-tree 2.")
   @Test
   void testInOrderTree2() {
-    var traverseList = BTreeTraverse.inOrder(root2);
-    assertEquals(4, traverseList.get(0));
-    assertEquals(10, traverseList.get(1));
-    assertEquals(12, traverseList.get(2));
-    assertEquals(15, traverseList.get(3));
-    assertEquals(18, traverseList.get(4));
-    assertEquals(22, traverseList.get(5));
-    assertEquals(24, traverseList.get(6));
-    assertEquals(25, traverseList.get(7));
-    assertEquals(31, traverseList.get(8));
-    assertEquals(35, traverseList.get(9));
-    assertEquals(44, traverseList.get(10));
-    assertEquals(50, traverseList.get(11));
-    assertEquals(66, traverseList.get(12));
-    assertEquals(70, traverseList.get(13));
-    assertEquals(90, traverseList.get(14));
+    assertArrayEquals(
+      new int[] {4,10,12,15,18,22,24,25,31,35,44,50,66,70,90},
+      BTreeTraverse.inOrder(root2)
+    );
   }
 
   
   @DisplayName("Test postorder traverse of b-tree 1.")
   @Test
   void testPostOrderTree1() {
-    var traverseList = BTreeTraverse.postOrder(root1);
-    assertEquals(4, traverseList.get(0));
-    assertEquals(5, traverseList.get(1));
-    assertEquals(2, traverseList.get(2));
-    assertEquals(3, traverseList.get(3));
-    assertEquals(1, traverseList.get(4));
+    assertArrayEquals(new int[]{4, 5, 2, 3, 1}, BTreeTraverse.postOrder(root1));
   }
 
   @DisplayName("Test postorder traverse of b-tree 2.")
   @Test
   void testPostOrderTree2() {
-    var traverseList = BTreeTraverse.postOrder(root2);
-    assertEquals(4, traverseList.get(0));
-    assertEquals(12, traverseList.get(1));
-    assertEquals(10, traverseList.get(2));
-    assertEquals(18, traverseList.get(3));
-    assertEquals(24, traverseList.get(4));
-    assertEquals(22, traverseList.get(5));
-    assertEquals(15, traverseList.get(6));
-    assertEquals(31, traverseList.get(7));
-    assertEquals(44, traverseList.get(8));
-    assertEquals(35, traverseList.get(9));
-    assertEquals(66, traverseList.get(10));
-    assertEquals(90, traverseList.get(11));
-    assertEquals(70, traverseList.get(12));
-    assertEquals(50, traverseList.get(13));
-    assertEquals(25, traverseList.get(14));
+    assertArrayEquals(
+      new int[]{4, 12, 10, 18, 24, 22, 15, 31, 44, 35, 66, 90, 70, 50, 25},
+      BTreeTraverse.postOrder(root2)
+    );
   }
 }

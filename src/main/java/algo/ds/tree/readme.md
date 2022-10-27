@@ -12,10 +12,14 @@
 
    Implement a binary search tree and validate a binary search tree
 
-4. `MinimalBst.java`
+4. `BstTraverse.java`
+
+   Use three ways(Inorder, Preorder and Postorder) to traverse a binary search tree
+
+5. `MinimalBst.java`
 
    Create a binary search tree with minimal height based on a ascend-sorted array
 
-5. `ListOfDepths.java`
+6. `ListOfDepths.java`
 
    Create an array of all the nodes at each depth.

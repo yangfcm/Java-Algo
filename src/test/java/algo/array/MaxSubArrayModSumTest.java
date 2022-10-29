@@ -18,6 +18,12 @@ public class MaxSubArrayModSumTest {
     assertEquals(expected, MaxSubArrayModSum.solution1(arr, m));
   }
 
+  @ParameterizedTest(name = "Test MaxSubArrayModSum solution2")
+  @MethodSource("dataSource")
+  void testSolution2(long[] arr, int m, int expected) {
+    assertEquals(expected, MaxSubArrayModSum.solution2(arr, m));
+  }
+
   static Stream<Arguments> dataSource() {
     long[] arr1 = {3, 3, 9, 9, 5};
     int m1 = 7;

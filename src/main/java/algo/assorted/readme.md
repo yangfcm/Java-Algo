@@ -11,3 +11,7 @@
 3. `MaxProfit.java`
 
    Max profit: Given an array with each number representing a stock price for one day, work out an algorithm to find the max profit.
+
+4. `MinTime.java`
+
+   Find out minimum days required to produce target items with the given machines.

@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 @DisplayName("Test Array/TripleSum")
 public class TripleSumTest {
-  @ParameterizedTest()
+  @ParameterizedTest(name = "There are {3} such triplets from array a, b and c.")
   @MethodSource("dataSource")
   void testSolution(Integer[] a, Integer[] b, Integer[] c, int expected) {
     assertEquals(expected, TripleSum.solution(a, b, c));

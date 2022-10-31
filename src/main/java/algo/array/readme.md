@@ -56,10 +56,14 @@
 
     Compress and decompress a sparse array.
 
-15. `TwoSum.java`
+15. `TripleSum.java`
+
+    Given 3 arrays of a, b, c of different sizes, find the number of distinct triplets (p, q, r), where p is from a, q from b, r from c, satisfying the criteria: p <= q and q >= r.
+
+16. `TwoSum.java`
 
     Return indices of the two numbers whose sum equals to a target.
 
-16. `ValidSudoku.java`
+17. `ValidSudoku.java`
 
     Determine if a 9x9 Sudoku board is valid.

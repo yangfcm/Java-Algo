@@ -16,16 +16,16 @@ public class MaxSubArraySumTest {
     assertEquals(expected, MaxSubArraySum.solution1(arr));
   }
 
-  @ParameterizedTest(name = "Test MaxSubarraySum Solution1")
+  @ParameterizedTest(name = "Test MaxSubarraySum Solution2")
   @MethodSource("dataSource")
   void testSolution2(int[] arr, int expected) {
-    assertEquals(expected, MaxSubArraySum.solution1(arr));
+    assertEquals(expected, MaxSubArraySum.solution2(arr));
   }
   
-  @ParameterizedTest(name = "Test MaxSubarraySum Solution1")
+  @ParameterizedTest(name = "Test MaxSubarraySum Solution3")
   @MethodSource("dataSource")
   void testSolution3(int[] arr, int expected) {
-    assertEquals(expected, MaxSubArraySum.solution1(arr));
+    assertEquals(expected, MaxSubArraySum.solution3(arr));
   }
   
   static Stream<Arguments> dataSource() {

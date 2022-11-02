@@ -70,7 +70,7 @@ public class MakeCandies {
       w = total - m;
     } else {
       w = Math.max(w, half);
-      m = total - m;
+      m = total - w;
     }
     return new int[] {m, w};
   }

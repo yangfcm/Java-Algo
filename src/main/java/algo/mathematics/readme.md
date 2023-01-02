@@ -14,3 +14,7 @@
 3. `IsPrime.java`
 
    Test if a given number is a prime
+
+4. `Permutations.java`
+
+   REturn all the possible permutations of an array of numbers.

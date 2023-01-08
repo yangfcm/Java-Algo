@@ -23,3 +23,7 @@
 6. `SetOfStacks.java`
 
    Implement a stack of plates
+
+7. `IsBalanced.java`
+
+   Test if a string has balanced brackets.

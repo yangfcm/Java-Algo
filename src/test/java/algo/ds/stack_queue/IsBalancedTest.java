@@ -27,14 +27,19 @@ public class IsBalancedTest {
   }
 
   static Stream<Arguments> IsBalancedTestSource() {
-    return Stream.of(Arguments.arguments(
-      "abce", "{[()]}", "{{[[(())]]}}", "{(([])[])[]}", "{(([])[])[]}[]"
-    ));
+    return Stream.of(
+      Arguments.arguments("abce"),
+      Arguments.arguments("{[()]}"),
+      Arguments.arguments("{{[[(())]]}}"),
+      Arguments.arguments("{(([])[])[]}"),
+      Arguments.arguments("{(([])[])[]}[]")
+    );
   }
 
   static Stream<Arguments> NotBalancedTestSource() {
-    return Stream.of(Arguments.arguments(
-      "{[(])}", "{(([])[])[]]}"
-    ));
+    return Stream.of(
+      Arguments.arguments("{[(])}"), 
+      Arguments.arguments("{(([])[])[]]}")
+    );
   }
 }

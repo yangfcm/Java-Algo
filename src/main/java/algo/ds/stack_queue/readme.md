@@ -27,3 +27,7 @@
 7. `IsBalanced.java`
 
    Test if a string has balanced brackets.
+
+8. `LargestRectangle.java`
+
+   Return the area of the largest rectangle in the histogram.

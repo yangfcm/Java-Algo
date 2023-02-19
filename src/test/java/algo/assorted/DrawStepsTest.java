@@ -35,11 +35,11 @@ public class DrawStepsTest {
 
   static Stream<Arguments> dataSource() {
     int num1 = 2;
-    String step1 = "# \r\n##\r\n";
+    String step1 = "# \n##\n";
     int num2 = 3;
-    String step2 = "#  \r\n## \r\n###\r\n";
+    String step2 = "#  \n## \n###\n";
     int num3 = 4;
-    String step3 = "#   \r\n##  \r\n### \r\n####\r\n";
+    String step3 = "#   \n##  \n### \n####\n";
     return Stream.of(Arguments.arguments(num1, step1), Arguments.arguments(num2, step2),
         Arguments.arguments(num3, step3));
   }

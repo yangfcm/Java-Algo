@@ -35,11 +35,11 @@ public class DrawPyramidTest {
 
   static Stream<Arguments> dataSource() {
     int num1 = 2;
-    String pyramid1 = " # \r\n###\r\n";
+    String pyramid1 = " # \n###\n";
     int num2 = 3;
-    String pyramid2 = "  #  \r\n ### \r\n#####\r\n";
+    String pyramid2 = "  #  \n ### \n#####\n";
     int num3 = 4;
-    String pyramid3 = "   #   \r\n  ###  \r\n ##### \r\n#######\r\n";
+    String pyramid3 = "   #   \n  ###  \n ##### \n#######\n";
     return Stream.of(Arguments.arguments(num1, pyramid1), Arguments.arguments(num2, pyramid2),
         Arguments.arguments(num3, pyramid3));
   }

@@ -12,62 +12,66 @@
 
    Check two strings are permutation
 
-4. `CountVowels.java`
+4. `Defanging.java`
+
+   Defang an IP address.
+
+5. `CountVowels.java`
 
    Count the number of vowels used in a string
 
-5. `Isbalanced.java`
+6. `Isbalanced.java`
 
    Test if curly braces in a string is matched
 
-6. `IsUnique.java`
+7. `IsUnique.java`
 
    Determine if a string has all unique characters
 
-7. `MakeAnagrams.java`
+8. `MakeAnagrams.java`
 
    Determine the minimum number of characters deletions required to make two strings anagrams.
 
-8. `Maxchar.java`
+9. `Maxchar.java`
 
    Get the character that most commonly appears in a given string
 
-9. `OneAway.java`
+10. `OneAway.java`
 
-   Check if one string is one edit away from the other string
+    Check if one string is one edit away from the other string
 
-10. `Palindrome.java`
+11. `Palindrome.java`
 
     Test a string is a palindrome(its reversed string is exactly the same as itself)
 
-11. `PalindromePermutation.java`
+12. `PalindromePermutation.java`
 
     Check if a string is a permutation of a palindrome
 
-12. `RemoveVowels.java`
+13. `RemoveVowels.java`
 
     Remove vowels of a string
 
-13. `ReverseInteger.java`
+14. `ReverseInteger.java`
 
     Reverse an integer
 
-14. `ReverseString.java`
+15. `ReverseString.java`
 
     Reverse a string
 
-15. `SpecialString.java`
+16. `SpecialString.java`
 
     How many special strings
 
-16. `StringCompression.java`
+17. `StringCompression.java`
 
     Compress a string
 
-17. `StringRotation.java`
+18. `StringRotation.java`
 
     Check if one string is the rotation of the other string, using isSubString function
 
-18. `ValidString.java`
+19. `ValidString.java`
 
     Check if a string is valid as per a certain rule

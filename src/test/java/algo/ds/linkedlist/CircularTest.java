@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Test ds/linkedlist/Circular")
 public class CircularTest {
-  private MyLinkedList<Integer> list;
+  private MyLinkedList<Object> list;
 
   @BeforeEach
   public void setUp() { // Create a standard linked list.
-    list = new MyLinkedList<Integer>();
+    list = new MyLinkedList<Object>();
     list.addLast(1);
     list.addLast(2);
     list.addLast(3);
@@ -30,7 +30,7 @@ public class CircularTest {
   public void testCircularAsTrue() {
     var lastNode = list.findLast();
     var firstNode = list.findFirst();
-    lastNode.next = firstNode;  // Make linked list circular
+    lastNode.next = firstNode; // Make linked list circular
     assertTrue(Circular.solution(list));
   }
 

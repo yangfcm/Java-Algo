@@ -9,11 +9,11 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Test ds/linkedlist/MidPoint")
 public class MidPointTest {
-  private MyLinkedList<Integer> list;
+  private MyLinkedList<Object> list;
 
   @BeforeEach
   public void setUp() {
-    list = new MyLinkedList<Integer>();
+    list = new MyLinkedList<Object>();
     list.addLast(1);
     list.addLast(2);
     list.addLast(3);
@@ -36,7 +36,7 @@ public class MidPointTest {
   @DisplayName("Should return the middle node(the last one of the first half) of an even number of list.")
   @Test
   public void testMidPointWithEvenNumberOfList() {
-    list.addLast(6);  // Add a new node to make the number of nodes as an even number.
+    list.addLast(6); // Add a new node to make the number of nodes as an even number.
     var midPoint = MidPoint.solution(list);
     assertEquals(3, midPoint.getData());
   }

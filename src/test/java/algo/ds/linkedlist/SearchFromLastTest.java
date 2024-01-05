@@ -9,11 +9,11 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Test ds/linkedlist/SearchFromLast")
 public class SearchFromLastTest {
-  private MyLinkedList<Integer> list;
+  private MyLinkedList<Object> list;
 
   @BeforeEach
   public void setUp() {
-    list = new MyLinkedList<Integer>();
+    list = new MyLinkedList<Object>();
     list.addLast(1);
     list.addLast(2);
     list.addLast(3);
